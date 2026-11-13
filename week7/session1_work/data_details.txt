@@ -1,0 +1,63 @@
+## Duplicate transactionID
+rows involved 52308 | ids 23388
+fully identical rows 0
+ids differing in customer 23388 | asset 0 | type 0 | date 0
+          customerID         ISIN  transactionID transactionType  timestamp  totalValue   units       channel marketID
+D81F2638A9D9E5834D37 GRF000023009        6114955             Buy 2018-01-02 4999.980572 225.051        Branch    AEDAK
+058E9BA5E5164DA9C180 GRF000023009        6114955             Buy 2018-01-02 4999.980572 225.051        Branch    AEDAK
+FBCE9AAC6E1F4C728449 GRS015003007        6124377            Sell 2018-01-03   40.480000  22.000 Phone Banking     XATH
+DFC7DF3238EC72B1597E GRS015003007        6124377            Sell 2018-01-03   40.480000  22.000 Phone Banking     XATH
+DFC7DF3238EC72B1597E GRS323003012        6124423            Sell 2018-01-03   25.830000  30.000 Phone Banking     XATH
+FBCE9AAC6E1F4C728449 GRS323003012        6124423            Sell 2018-01-03   25.830000  30.000 Phone Banking     XATH
+
+## Buys per year
+{2018: 49489, 2019: 10624, 2020: 66345, 2021: 58194, 2022: 44261}
+
+## Top-10 assets by Buy transactions
+               buys  buyers assetCategory assetSubCategory marketID                  sector
+ISIN                                                                                       
+GRS003003035  25547    8162         Stock        Large Cap     XATH                     NaN
+GRS015003007  19934    4556         Stock        Large Cap     XATH      Financial Services
+GRS014003032  13641    2757         Stock        Large Cap     XATH      Financial Services
+GRS323003012  11196    2650         Stock        Large Cap     XATH      Financial Services
+GRS434003000   9765    2599         Stock        Large Cap     XATH               Utilities
+GRS419003009   7420    2112         Stock        Large Cap     XATH       Consumer Cyclical
+GRS393503008   7148    2167         Stock        Large Cap     XATH             Industrials
+GRS260333000   6277    3353         Stock        Large Cap     XATH  Communication Services
+GRS426003000   4837    1243         Stock        Large Cap     XATH                  Energy
+GRS298343005   4633    2149         Stock        Large Cap     XATH                  Energy
+
+Buys by marketID (top 5 share): {'XATH': 0.877, 'AEDAK': 0.057, 'EBB': 0.041, 'ENAX': 0.02, 'XLUX': 0.002}
+
+## Profile snapshot timing
+snapshot timestamp == 2000-01-01: 130
+snapshots per year: {2000: 130, 2013: 1, 2015: 2, 2016: 1, 2018: 16751, 2019: 677, 2020: 4275, 2021: 7220, 2022: 3411}
+lastQuestionnaireDate range 2000-01-01 -> 2022-11-23
+customers whose lastQuestionnaireDate differs across snapshots 12
+customers whose investmentCapacity differs across snapshots 0
+predicted riskLevel rows: lastQuestionnaireDate range 2000-01-01 -> 2000-01-01
+
+## Candidate records: Buy of a stock with sector, customer with 2 snapshots, observed risk, questionnaire after the buy
+candidates 1422
+
+TRANSACTION ROW:
+          customerID         ISIN  transactionID transactionType  timestamp  totalValue  units          channel marketID
+4AEA8F643610D3717F1C GRS393503008        8912167             Buy 2021-05-12      1490.0  100.0 Internet Banking     XATH
+
+PROFILE ROWS:
+          customerID customerType riskLevel investmentCapacity lastQuestionnaireDate  timestamp
+4AEA8F643610D3717F1C      Premium    Income          CAP_LT30K            2021-05-17 2018-01-02
+4AEA8F643610D3717F1C      Premium    Income          CAP_LT30K            2021-05-17 2021-06-14
+
+ASSET ROW(S):
+        ISIN      assetName assetShortName assetCategory assetSubCategory marketID      sector      industry  timestamp
+GRS393503008 MYTILINAIOS SA          ΜΥΤΙΛ         Stock        Large Cap     XATH Industrials Conglomerates 2018-01-02
+
+customer buys total 113 | distinct assets 48 | first 2018-01-02 | last 2022-11-11
+same asset bought before this date: 1
+
+## Extra checks
+Buy rows dated 2018-01-02: 35686 | customers 18964
+Buy rows in 2018 by month: {1: 37474, 2: 1283, 3: 1372, 4: 855, 5: 1670, 6: 862, 7: 623, 8: 870, 9: 1548, 10: 1204, 11: 1008, 12: 720}
+customers per shared transactionID: {2: 19109, 3: 3132, 4: 1041, 5: 106}
+Buy rows after dropping shared-id duplicates (one row per transactionID): 213639

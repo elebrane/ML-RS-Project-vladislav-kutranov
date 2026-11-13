@@ -1,0 +1,50 @@
+
+## Transactions
+rows 388048 | Buy 228913 | Sell 159135
+customers 29090 | assets 320 | dates 2018-01-02 -> 2022-11-30
+duplicate transactionID 28920
+channel share: {'Internet Banking': 0.646, 'Branch': 0.184, 'Phone Banking': 0.17}
+buyers 29090 | assets bought 320 | unique (customer,asset) buy pairs 89884
+
+## Activity per buyer
+buys per buyer: median 2.0 mean 7.87 p90 13.0 max 4047
+distinct assets per buyer: median 1.0 mean 3.09 | share with 1 asset 0.513 | <=3 0.786
+
+## Popularity concentration (Buy transactions)
+top-1 share 0.112 | top-10 0.482 | top-12 0.517 | top-50 0.828
+assets needed for 50% of buys 12 | for 80% 44
+top-10 by distinct buyers cover 0.374 of unique buy pairs
+
+## Repeat purchases
+share of Buy rows on a (customer,asset) pair already bought on an EARLIER date 0.605
+share of (customer,asset) pairs bought on >1 distinct date 0.307
+
+## Buys by asset category (asset_information latest row per ISIN)
+asset_information rows 836 | unique ISIN 806
+catalogue by category: {'MTF': 313, 'Stock': 284, 'Bond': 209}
+buys by category share: {'Stock': 0.889, 'MTF': 0.061, 'Bond': 0.05} | unmapped 0
+sector missing share (catalogue) 0.474 | industry missing 0.537
+sector missing by category: {'Bond': 0.05, 'MTF': 1.0, 'Stock': 0.2}
+
+## Customer information
+rows 32468 | unique customers 29090 | customers with >1 snapshot 2263
+snapshot timestamp range 2000-01-01 -> 2022-11-30
+riskLevel rows: {'observed': 0.765, 'predicted': 0.224, 'missing': 0.011}
+investmentCapacity rows: {'observed': 0.76, 'predicted': 0.23, 'missing': 0.011}
+riskLevel latest snapshot per customer: {'observed': 0.744, 'predicted': 0.245, 'missing': 0.011}
+investmentCapacity latest snapshot per customer: {'observed': 0.737, 'predicted': 0.252, 'missing': 0.011}
+customerType (latest): {'Mass': 18610, 'Premium': 8906, 'Professional': 1327, 'Inactive': 208, 'Legal Entity': 39}
+rows with lastQuestionnaireDate 32468 | of them lastQuestionnaireDate > snapshot timestamp: 0.385
+customers whose riskLevel changes across snapshots 0
+buyers without any profile row 0
+buyers whose first profile snapshot is AFTER their first buy: 0.116
+
+## Prices
+assets with price series 807 | bought assets without price series 0
+
+## Time cuts: 6-month window after cut T (Buy only)
+T=2020-05-29 test buyers 4223 | warm (also in train) 3499 (82.9%) | warm test pairs already bought in train 58.7% | warm users with >=1 NEW asset 2191
+T=2020-11-29 test buyers 6378 | warm (also in train) 4344 (68.1%) | warm test pairs already bought in train 49.0% | warm users with >=1 NEW asset 3186
+T=2021-05-29 test buyers 7296 | warm (also in train) 4804 (65.8%) | warm test pairs already bought in train 42.5% | warm users with >=1 NEW asset 3808
+T=2021-11-29 test buyers 5339 | warm (also in train) 4390 (82.2%) | warm test pairs already bought in train 59.0% | warm users with >=1 NEW asset 2926
+T=2022-05-29 test buyers 3717 | warm (also in train) 3192 (85.9%) | warm test pairs already bought in train 64.5% | warm users with >=1 NEW asset 1860
