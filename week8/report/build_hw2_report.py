@@ -366,7 +366,7 @@ html = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>HW2
 <li><b>Checks the AI performed:</b> listed in &sect;4 (recomputed nDCG, protocol hash, reproduction of the pool analysis, unit tests, status agreement); every reference was opened and its title, authors, venue and year checked against the source page on 2026-11-19.</li>
 <li><b>What I personally verified:</b> the nDCG@10 of user 6BAA2D by hand from the two source files (&sect;4, "My own check").</li>
 <li><b>Trusted without verification:</b> the content of the 100 encoder answers (only automatic checks and status agreement); the bootstrap code; &tau; = 60 for decayed frequency from an earlier analysis; the replay of E2 answers on the 77 completed users.</li>
-<li><b>Session log:</b> <code>kutranov_vladislav_hw2_session.jsonl</code> — unmodified export of the AI session.</li>
+<li><b>Session log:</b> <code>kutranov_vladislav_hw2_session.json</code> — this conversation extracted unchanged from the official claude.ai data export (derivation and SHA-256 in the accompanying README).</li>
 </ul>
 
 <h2>References</h2>
