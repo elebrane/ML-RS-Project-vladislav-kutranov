@@ -16,8 +16,9 @@ client's own assets and the most-bought new assets of the client's main category
 evidence, keeping own assets first unless the evidence points elsewhere?
 
 **Answer on the course test: no.** The full hybrid scored 0.0195 vs 0.0277 for Latest buy; the
-encoder alone with a fixed cascade scored 0.0295, the best of all eight methods. The PDF report
-is submitted through the course channel; `report/build_hw2_report.py` rebuilds it from the run outputs.
+encoder alone with a fixed cascade scored 0.0295, the best of all eight methods. Report:
+[`report/kutranov_vladislav_hw2_report.pdf`](report/kutranov_vladislav_hw2_report.pdf) (also submitted through the course
+channel); `report/build_hw2_report.py` rebuilds it from the run outputs.
 
 | Method (100 users, 11 with purchases) | nDCG@10 all | nDCG@10 nonempty | Failed cases |
 |---|---:|---:|---:|
