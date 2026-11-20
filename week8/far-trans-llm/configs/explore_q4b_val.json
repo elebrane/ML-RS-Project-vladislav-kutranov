@@ -1,0 +1,44 @@
+{
+  "run_name": "explore_q4b_val",
+  "note": "Validation cutoff 2021-05-01 (its 30-day window ends before the course test month). Final run: cutoff 2021-06-01.",
+  "data_dir": "../Data FAR-Trans",
+  "output_dir": "outputs/explore_q4b_val",
+  "protocol": {
+    "cutoff": "2021-05-01",
+    "horizon_days": 30,
+    "max_users": 100
+  },
+  "pipeline": {
+    "history_events": 50,
+    "own_max": 30,
+    "propensity_start": "2019-07-01",
+    "shortlist_size": 20,
+    "popularity_days": 30,
+    "shuffle_seed": 0,
+    "second_seed": 1
+  },
+  "arms": [
+    "control_popularity",
+    "llm",
+    "llm_masked_names",
+    "llm_shuffled_shortlist"
+  ],
+  "llm_input": {
+    "holdings_shown": 10,
+    "max_new_tokens": 96,
+    "on_invalid": "fallback"
+  },
+  "generation": {
+    "model": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "main",
+    "device": "auto",
+    "dtype": "auto",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "sample_seed": 0,
+    "thinking": false,
+    "context_limit": 4096,
+    "allow_download": true
+  },
+  "prompts": {}
+}

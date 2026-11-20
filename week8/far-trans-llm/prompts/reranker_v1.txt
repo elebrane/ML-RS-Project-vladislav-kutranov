@@ -1,0 +1,20 @@
+You rank candidate assets for one investor for the next 30 days.
+
+CLIENT
+{client_block}
+
+CANDIDATES (listed in random order; "own" = the client bought it before, "new" = never bought)
+{candidate_rows}
+
+TASK
+Order the candidates by how likely the client is to buy each of them in the next 30 days.
+Default order: the client's own assets first, then new assets.
+Depart from the default only where the client evidence points to it, for example a pattern
+of buying popular new assets, or an own asset the client has stopped buying or has sold.
+
+RULES
+- Use only the evidence above. Do not infer goals, risk tolerance or future prices.
+- Return exactly 10 different candidate IDs taken from the list.
+
+OUTPUT
+A JSON array of 10 candidate IDs and nothing else.

@@ -1,0 +1,200 @@
+{
+  "run": "hybrid_test_june",
+  "users": 100,
+  "buyers": 11,
+  "bought_assets": 18,
+  "found_in_top10": {
+    "cbf": 5,
+    "hyb_c1_rule": 10,
+    "hyb_c2_encoder": 10,
+    "hyb_c3_reranker": 3,
+    "hyb_c4_both": 5,
+    "latest_buy": 9,
+    "latest_buy_or_sell": 9,
+    "popularity": 7
+  },
+  "found_by_union_of_all_methods": 13,
+  "mean_ndcg_buyers": {
+    "cbf": 0.1827,
+    "hyb_c1_rule": 0.2379,
+    "hyb_c2_encoder": 0.2683,
+    "hyb_c3_reranker": 0.103,
+    "hyb_c4_both": 0.1776,
+    "latest_buy": 0.252,
+    "latest_buy_or_sell": 0.2464,
+    "popularity": 0.2599
+  },
+  "oracle_best_method_per_buyer": 0.4771,
+  "mean_common_items_in_top10": {
+    "cbf | hyb_c1_rule": 3.44,
+    "cbf | hyb_c2_encoder": 3.44,
+    "cbf | hyb_c3_reranker": 2.89,
+    "cbf | hyb_c4_both": 2.98,
+    "cbf | latest_buy": 2.71,
+    "cbf | latest_buy_or_sell": 2.71,
+    "cbf | popularity": 2.16,
+    "hyb_c1_rule | hyb_c2_encoder": 10,
+    "hyb_c1_rule | hyb_c3_reranker": 8.09,
+    "hyb_c1_rule | hyb_c4_both": 8.26,
+    "hyb_c1_rule | latest_buy": 6.55,
+    "hyb_c1_rule | latest_buy_or_sell": 6.37,
+    "hyb_c1_rule | popularity": 5.06,
+    "hyb_c2_encoder | hyb_c3_reranker": 8.09,
+    "hyb_c2_encoder | hyb_c4_both": 8.26,
+    "hyb_c2_encoder | latest_buy": 6.55,
+    "hyb_c2_encoder | latest_buy_or_sell": 6.37,
+    "hyb_c2_encoder | popularity": 5.06,
+    "hyb_c3_reranker | hyb_c4_both": 8.88,
+    "hyb_c3_reranker | latest_buy": 5.09,
+    "hyb_c3_reranker | latest_buy_or_sell": 4.99,
+    "hyb_c3_reranker | popularity": 4.52,
+    "hyb_c4_both | latest_buy": 5.28,
+    "hyb_c4_both | latest_buy_or_sell": 5.17,
+    "hyb_c4_both | popularity": 4.56,
+    "latest_buy | latest_buy_or_sell": 9.63,
+    "latest_buy | popularity": 8.43,
+    "latest_buy_or_sell | popularity": 8.17
+  },
+  "pairs": {
+    "cbf | hyb_c1_rule": {
+      "oracle_best_of_two_buyers": 0.261,
+      "a_better": 2,
+      "b_better": 4
+    },
+    "cbf | hyb_c2_encoder": {
+      "oracle_best_of_two_buyers": 0.2835,
+      "a_better": 1,
+      "b_better": 5
+    },
+    "cbf | hyb_c3_reranker": {
+      "oracle_best_of_two_buyers": 0.2506,
+      "a_better": 5,
+      "b_better": 2
+    },
+    "cbf | hyb_c4_both": {
+      "oracle_best_of_two_buyers": 0.2591,
+      "a_better": 3,
+      "b_better": 4
+    },
+    "cbf | latest_buy": {
+      "oracle_best_of_two_buyers": 0.2791,
+      "a_better": 2,
+      "b_better": 4
+    },
+    "cbf | latest_buy_or_sell": {
+      "oracle_best_of_two_buyers": 0.2776,
+      "a_better": 2,
+      "b_better": 4
+    },
+    "cbf | popularity": {
+      "oracle_best_of_two_buyers": 0.3047,
+      "a_better": 4,
+      "b_better": 2
+    },
+    "hyb_c1_rule | hyb_c2_encoder": {
+      "oracle_best_of_two_buyers": 0.2683,
+      "a_better": 0,
+      "b_better": 5
+    },
+    "hyb_c1_rule | hyb_c3_reranker": {
+      "oracle_best_of_two_buyers": 0.3057,
+      "a_better": 6,
+      "b_better": 2
+    },
+    "hyb_c1_rule | hyb_c4_both": {
+      "oracle_best_of_two_buyers": 0.3196,
+      "a_better": 4,
+      "b_better": 4
+    },
+    "hyb_c1_rule | latest_buy": {
+      "oracle_best_of_two_buyers": 0.2912,
+      "a_better": 3,
+      "b_better": 2
+    },
+    "hyb_c1_rule | latest_buy_or_sell": {
+      "oracle_best_of_two_buyers": 0.2896,
+      "a_better": 5,
+      "b_better": 2
+    },
+    "hyb_c1_rule | popularity": {
+      "oracle_best_of_two_buyers": 0.3526,
+      "a_better": 4,
+      "b_better": 3
+    },
+    "hyb_c2_encoder | hyb_c3_reranker": {
+      "oracle_best_of_two_buyers": 0.3362,
+      "a_better": 6,
+      "b_better": 2
+    },
+    "hyb_c2_encoder | hyb_c4_both": {
+      "oracle_best_of_two_buyers": 0.3294,
+      "a_better": 5,
+      "b_better": 2
+    },
+    "hyb_c2_encoder | latest_buy": {
+      "oracle_best_of_two_buyers": 0.3153,
+      "a_better": 5,
+      "b_better": 2
+    },
+    "hyb_c2_encoder | latest_buy_or_sell": {
+      "oracle_best_of_two_buyers": 0.3137,
+      "a_better": 5,
+      "b_better": 2
+    },
+    "hyb_c2_encoder | popularity": {
+      "oracle_best_of_two_buyers": 0.3775,
+      "a_better": 4,
+      "b_better": 2
+    },
+    "hyb_c3_reranker | hyb_c4_both": {
+      "oracle_best_of_two_buyers": 0.1844,
+      "a_better": 1,
+      "b_better": 2
+    },
+    "hyb_c3_reranker | latest_buy": {
+      "oracle_best_of_two_buyers": 0.3199,
+      "a_better": 2,
+      "b_better": 6
+    },
+    "hyb_c3_reranker | latest_buy_or_sell": {
+      "oracle_best_of_two_buyers": 0.3143,
+      "a_better": 2,
+      "b_better": 6
+    },
+    "hyb_c3_reranker | popularity": {
+      "oracle_best_of_two_buyers": 0.3277,
+      "a_better": 2,
+      "b_better": 6
+    },
+    "hyb_c4_both | latest_buy": {
+      "oracle_best_of_two_buyers": 0.3353,
+      "a_better": 3,
+      "b_better": 5
+    },
+    "hyb_c4_both | latest_buy_or_sell": {
+      "oracle_best_of_two_buyers": 0.3325,
+      "a_better": 3,
+      "b_better": 5
+    },
+    "hyb_c4_both | popularity": {
+      "oracle_best_of_two_buyers": 0.3648,
+      "a_better": 4,
+      "b_better": 4
+    },
+    "latest_buy | latest_buy_or_sell": {
+      "oracle_best_of_two_buyers": 0.257,
+      "a_better": 4,
+      "b_better": 1
+    },
+    "latest_buy | popularity": {
+      "oracle_best_of_two_buyers": 0.3364,
+      "a_better": 3,
+      "b_better": 3
+    },
+    "latest_buy_or_sell | popularity": {
+      "oracle_best_of_two_buyers": 0.3386,
+      "a_better": 3,
+      "b_better": 3
+    }
+  }
+}

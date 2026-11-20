@@ -1,0 +1,47 @@
+[
+  {
+    "latest_buy": 0.5537,
+    "popularity": 0.3603,
+    "cbf": 0.4012,
+    "cell1": 0.5624,
+    "rrf(cell1,popularity)": 0.494,
+    "rrf(latest_buy,popularity)": 0.4731,
+    "rrf(all four)": 0.5448,
+    "oracle_best_of(cell1,popularity)": 0.606,
+    "oracle_best_of(all four)": 0.665,
+    "common_items(cell1,popularity)": 5.5854,
+    "common_items(latest_buy,popularity)": 7.2341,
+    "cutoff": "2021-03-01",
+    "buyers": 615
+  },
+  {
+    "latest_buy": 0.5588,
+    "popularity": 0.3129,
+    "cbf": 0.3399,
+    "cell1": 0.5616,
+    "rrf(cell1,popularity)": 0.4544,
+    "rrf(latest_buy,popularity)": 0.4373,
+    "rrf(all four)": 0.5031,
+    "oracle_best_of(cell1,popularity)": 0.6016,
+    "oracle_best_of(all four)": 0.6468,
+    "common_items(cell1,popularity)": 5.6179,
+    "common_items(latest_buy,popularity)": 7.0175,
+    "cutoff": "2021-04-01",
+    "buyers": 513
+  },
+  {
+    "latest_buy": 0.5395,
+    "popularity": 0.3671,
+    "cbf": 0.3302,
+    "cell1": 0.5445,
+    "rrf(cell1,popularity)": 0.4914,
+    "rrf(latest_buy,popularity)": 0.4729,
+    "rrf(all four)": 0.5202,
+    "oracle_best_of(cell1,popularity)": 0.6072,
+    "oracle_best_of(all four)": 0.644,
+    "common_items(cell1,popularity)": 5.3218,
+    "common_items(latest_buy,popularity)": 6.9246,
+    "cutoff": "2021-05-01",
+    "buyers": 491
+  }
+]

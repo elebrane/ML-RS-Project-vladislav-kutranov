@@ -1,0 +1,38 @@
+[
+  {
+    "latest_buy": 0.5537,
+    "latest_buy_or_sell": 0.5385,
+    "cell1": 0.5624,
+    "core_first": 0.5672,
+    "exited_first": 0.5652,
+    "pool_recall": 0.7906,
+    "oracle_pool": 0.8165,
+    "cutoff": "2021-03-01",
+    "warm_users": 3000,
+    "buyers": 615
+  },
+  {
+    "latest_buy": 0.5588,
+    "latest_buy_or_sell": 0.5426,
+    "cell1": 0.5616,
+    "core_first": 0.5624,
+    "exited_first": 0.5592,
+    "pool_recall": 0.7773,
+    "oracle_pool": 0.8031,
+    "cutoff": "2021-04-01",
+    "warm_users": 3000,
+    "buyers": 513
+  },
+  {
+    "latest_buy": 0.5395,
+    "latest_buy_or_sell": 0.5372,
+    "cell1": 0.5445,
+    "core_first": 0.5459,
+    "exited_first": 0.545,
+    "pool_recall": 0.7973,
+    "oracle_pool": 0.8201,
+    "cutoff": "2021-05-01",
+    "warm_users": 3000,
+    "buyers": 491
+  }
+]

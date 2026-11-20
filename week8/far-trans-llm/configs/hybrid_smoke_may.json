@@ -1,0 +1,66 @@
+{
+  "run_name": "hybrid_smoke_may_v3",
+  "note": "Smoke test: 3 buyers of the validation cutoff 2021-05-01 (window ends before the June test month). Bug check only; prompts are not tuned on it. v2: compact encoder output (v1 hit the 800-token limit on 2 of 3 users). v3: the prompt lists the ids that need a status (v2 skipped one row for 1 of 3 users).",
+  "data_dir": "../Data FAR-Trans",
+  "output_dir": "outputs/hybrid_smoke_may_v3",
+  "cells": [
+    "c1",
+    "c2",
+    "c3",
+    "c4"
+  ],
+  "permutations": [
+    1,
+    2
+  ],
+  "protocol": {
+    "cutoff": "2021-05-01",
+    "horizon_days": 30,
+    "max_users": 100,
+    "pick": 3,
+    "pick_from": "buyers",
+    "pick_seed": 0
+  },
+  "facts": {
+    "decay_tau": 60.0,
+    "popularity_days": 30,
+    "spike_recent_days": 7,
+    "spike_baseline_weeks": 4,
+    "spike_min_ratio": 3.0,
+    "spike_min_buyers": 5,
+    "max_asset_rows": 12
+  },
+  "pool": {
+    "own_max": 10,
+    "popular_new_max": 10
+  },
+  "encoder": {
+    "encoder_prompt": "encoder_v3.txt",
+    "encoder_max_new_tokens": 1000,
+    "max_patterns": 8,
+    "status_rank": [
+      "core",
+      "new",
+      "lapsed",
+      "one_off",
+      "exited_gain",
+      "exited_loss"
+    ]
+  },
+  "reranker": {
+    "reranker_prompt": "reranker_v1.txt",
+    "reranker_max_new_tokens": 100
+  },
+  "generation": {
+    "model": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "device": "auto",
+    "dtype": "float16",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "sample_seed": 0,
+    "context_limit": 8192,
+    "allow_download": true,
+    "on_invalid": "fallback"
+  }
+}

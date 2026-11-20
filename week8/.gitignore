@@ -1,0 +1,8 @@
+# outputs, caches and logs stay local (session logs are never committed)
+far-trans/outputs/
+far-trans-llm/outputs/
+.venv/
+**/.venv/
+__pycache__/
+*.log
+system_info.txt

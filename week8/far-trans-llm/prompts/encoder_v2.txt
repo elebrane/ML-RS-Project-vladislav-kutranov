@@ -1,0 +1,31 @@
+You summarize an investor's observed trading behaviour for a recommender system.
+
+EVIDENCE
+Client profile at {cutoff}: {profile}
+Client activity: {buys_last_90d} buys in the last 90 days, {buys_prev_90d} in the 90 days before. Main asset category: {main_category}.
+One row per asset the client has bought (at most {max_rows} rows; any other assets are summed in the last line).
+All values use only data before {cutoff}; "days ago" counts back from {cutoff}.
+Popularity: category rank = the asset's rank inside its category by the number of distinct bank clients who bought it in the previous 30 days; spike = buyers in the previous 7 days at least {spike_ratio} times the weekly average of the 4 weeks before; price 30d = price change over the previous 30 days.
+Decayed frequency = sum over the client's buys of exp(-days ago / 60).
+{fact_table}
+
+TASK
+Describe what was observed. Do not explain why it happened.
+
+RULES
+- Use only the rows above. Every pattern must cite the asset IDs it rests on.
+- Copy numbers exactly as they appear in the rows.
+- State facts only: no "indicating", "suggesting", "preference" or other interpretation.
+- Do not infer goals, risk tolerance or future prices. Put what the rows cannot tell into "unknowns".
+- Give every asset row exactly one status. If several fit, take the first one that fits:
+  core        bought several times, latest buy within the last 90 days (even if sold since)
+  exited_gain fully sold, last sale above the average buy price
+  exited_loss fully sold, last sale below the average buy price
+  new         first bought within the last 60 days
+  lapsed      bought several times, no buy in the last 90 days
+  one_off     bought once, more than 60 days ago
+- Be brief: at most 5 patterns of at most 20 words each, notes of at most 8 words, at most 3 unknowns.
+
+OUTPUT
+Return one compact JSON object on a single line, without indentation or line breaks, and nothing else:
+{"observed_patterns":[{"pattern":"...","supporting_assets":["<id>"]}],"asset_status":{"<id>":{"status":"<status>","note":"<at most 8 words>"}},"unknowns":["..."]}

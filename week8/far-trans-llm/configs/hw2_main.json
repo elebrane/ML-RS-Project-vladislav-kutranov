@@ -1,0 +1,30 @@
+{
+  "run_name": "hw2_main",
+  "data_dir": "../Data FAR-Trans",
+  "output_dir": "outputs/hw2_main",
+  "settings": {
+    "arms": "R,Rp,S,C",
+    "max_users": 100,
+    "candidate_count": 50,
+    "own_max": 30,
+    "history_events": 50,
+    "shuffle_seed": 0,
+    "mask_names": false,
+    "rank_max_new_tokens": 160,
+    "stage1_max_new_tokens": 0,
+    "on_invalid": "fallback"
+  },
+  "generation": {
+    "model": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "device": "auto",
+    "dtype": "auto",
+    "temperature": 0,
+    "top_p": 1,
+    "sample_seed": 0,
+    "thinking": false,
+    "context_limit": 8192,
+    "allow_download": true
+  },
+  "prompts": {}
+}
