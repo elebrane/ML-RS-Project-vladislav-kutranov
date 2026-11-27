@@ -128,7 +128,7 @@ html = f"""<!DOCTYPE html><html><head><meta charset="utf-8"><title>HW3 Kutranov<
 .todo{{background:#fef3c7;color:#92400e}} .prelim{{border:1px solid #b45309;background:#fffbeb;padding:4px 8px;margin:4px 0;font-size:8pt}}</style></head><body>
 <h1>Does Market News Help a Zero-Shot LLM Fill the New-Asset Slots? A Controlled Test on FAR-Trans</h1>
 <div class="meta"><div>Vladislav Kutranov · Team Sparse Signals (Zlata Kranina, Maria Kodzaeva) · LLM4Rec, HSE, Homework 3</div>
-<div>Repository: github.com/elebrane/ML-RS-Project-vladislav-kutranov, folder week9/news_rag · experiment commit: <span class="todo">[add after push]</span></div></div>
+<div>Repository: github.com/elebrane/ML-RS-Project-vladislav-kutranov, branch week9-news-rag, folder week9/news_rag · experiment commit: 6c6b682</div></div>
 {'' if m1 else '<div class="prelim"><b>Preliminary version.</b> Results for the main method M are still being computed.</div>'}
 <div class="abstract"><b>Abstract.</b> In FAR-Trans most purchases are repeats, and the course baselines show that recency is hard to beat.
 Our HW2 hybrid ("Duet") found that an LLM which only restates code-computed facts adds nothing. In HW3 we narrow the LLM to the one place
