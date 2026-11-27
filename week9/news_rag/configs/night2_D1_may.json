@@ -1,0 +1,29 @@
+{
+ "cohort": "D1_may",
+ "run_name": "night2_all_arms",
+ "arms": [
+  "c0_popularity",
+  "cnews_attention",
+  "cnews_volume",
+  "cnews_tone",
+  "llm_nonews",
+  "llm_numbers",
+  "llm_full",
+  "llm_shuffled"
+ ],
+ "subset_arms": [
+  "llm_full_order2",
+  "llm_full_names"
+ ],
+ "subset_users": 200,
+ "llm_scope": "stock_main",
+ "generation": {
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "device": "auto",
+  "dtype": "float16",
+  "context_limit": 8192
+ },
+ "max_new_tokens": 90,
+ "note": "only if night 1 shows M != A1"
+}

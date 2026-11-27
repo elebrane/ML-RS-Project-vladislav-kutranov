@@ -1,0 +1,166 @@
+{
+ "table": {
+  "popularity": {
+   "all": 0.0729,
+   "n_all": 60,
+   "buyers": 0.3122,
+   "n_buyers": 14,
+   "bought_new": 0.0809,
+   "n_bought_new": 5,
+   "with_slots": 0.0734,
+   "n_with_slots": 52
+  },
+  "cbf": {
+   "all": 0.0776,
+   "n_all": 60,
+   "buyers": 0.3325,
+   "n_buyers": 14,
+   "bought_new": 0.0602,
+   "n_bought_new": 5,
+   "with_slots": 0.0745,
+   "n_with_slots": 52
+  },
+  "latest_buy": {
+   "all": 0.1289,
+   "n_all": 60,
+   "buyers": 0.5525,
+   "n_buyers": 14,
+   "bought_new": 0.1696,
+   "n_bought_new": 5,
+   "with_slots": 0.1149,
+   "n_with_slots": 52
+  },
+  "latest_buy_or_sell": {
+   "all": 0.1239,
+   "n_all": 60,
+   "buyers": 0.5309,
+   "n_buyers": 14,
+   "bought_new": 0.1861,
+   "n_bought_new": 5,
+   "with_slots": 0.1092,
+   "n_with_slots": 52
+  },
+  "c0_popularity": {
+   "all": 0.1369,
+   "n_all": 60,
+   "buyers": 0.5868,
+   "n_buyers": 14,
+   "bought_new": 0.1818,
+   "n_bought_new": 5,
+   "with_slots": 0.1167,
+   "n_with_slots": 52
+  },
+  "llm_nonews": {
+   "all": 0.1369,
+   "n_all": 60,
+   "buyers": 0.5868,
+   "n_buyers": 14,
+   "bought_new": 0.1818,
+   "n_bought_new": 5,
+   "with_slots": 0.1167,
+   "n_with_slots": 52
+  },
+  "oracle_block": {
+   "all": 0.1369,
+   "n_all": 60,
+   "buyers": 0.5868,
+   "n_buyers": 14,
+   "bought_new": 0.1818,
+   "n_bought_new": 5,
+   "with_slots": 0.1167,
+   "n_with_slots": 52
+  }
+ },
+ "contrasts": [
+  {
+   "a": "llm_nonews",
+   "b": "c0_popularity",
+   "question": "LLM reordering without news vs control",
+   "all_users": {
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "better": 0,
+    "worse": 0,
+    "sign_p": 1.0
+   },
+   "buyers": {
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "better": 0,
+    "worse": 0,
+    "sign_p": 1.0
+   }
+  }
+ ],
+ "subset_diagnostics": {},
+ "meta": {
+  "run_name": "smoke_a1",
+  "cohort": {
+   "name": "TUNE_apr",
+   "cutoff": "2021-04-01",
+   "max_users": 3000,
+   "active_days": 90,
+   "role": "prompt smoke test and the C-news go/no-go only"
+  },
+  "arms": [
+   "c0_popularity",
+   "llm_nonews"
+  ],
+  "subset_arms": [],
+  "subset_users": 0,
+  "protocol_hash": "5a53a633ce778f0ff022659351944f6adc9bf3726817d259901a24f439b7ad34",
+  "hw3_protocol_hash": "f8265839ca5ffb89dd62c244e64668632d5f9253eca7f034265aeb62e5b9f163",
+  "users": 60,
+  "lists_changed_vs_c0": {
+   "llm_nonews": 25
+  },
+  "llm_status": {
+   "llm_nonews": {
+    "no_call_out_of_scope": 27,
+    "ok": 25,
+    "no_call_no_slots": 8
+   }
+  },
+  "news_coverage": {},
+  "prompt_chars": {
+   "llm_nonews": {
+    "mean": 3760,
+    "max": 3814
+   }
+  },
+  "generator": {
+   "model": "Qwen/Qwen3-4B-Instruct-2507",
+   "requested_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+   "resolved_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+   "device": "mps",
+   "dtype": "torch.float16",
+   "torch_version": "2.11.0",
+   "transformers_version": "4.57.6",
+   "tokenizer_class": "Qwen2TokenizerFast",
+   "do_sample": false,
+   "temperature": 0.0,
+   "top_p": 1.0,
+   "sample_seed": null,
+   "thinking": false,
+   "context_limit": 8192,
+   "cache_hits": 0,
+   "new_calls": 25
+  },
+  "prompt": "block_ranker_v1.txt",
+  "max_new_tokens": 90,
+  "seconds": {
+   "preparation_cohort_and_blocks": 13.1,
+   "recommendation_loop_wall": 197.5,
+   "generation_by_arm_incl_cached": {
+    "llm_nonews": 196.8
+   },
+   "total_wall": 252.8
+  }
+ }
+}

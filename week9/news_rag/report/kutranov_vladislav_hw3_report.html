@@ -1,0 +1,142 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>HW3 Kutranov</title><style>
+  @page { size: A4; margin: 13mm 14mm 14mm; }
+  * { box-sizing: border-box; }
+  body { color: #111827; font-family: Arial, "Liberation Sans", Helvetica, sans-serif; font-size: 8.7pt; line-height: 1.3; margin: 0; }
+  h1 { font-size: 15.5pt; line-height: 1.15; margin: 0 0 5px; text-align: center; }
+  h2 { border-bottom: 1px solid #9ca3af; font-size: 11.5pt; margin: 10px 0 5px; padding-bottom: 1px; break-after: avoid; }
+  h3 { font-size: 9.4pt; margin: 7px 0 3px; break-after: avoid; }
+  p { margin: 0 0 5px; text-align: justify; }
+  ul { margin: 2px 0 5px 16px; padding: 0; } li { margin: 1px 0; text-align: justify; }
+  .meta { margin: 0 auto 8px; text-align: center; font-size: 8.8pt; } .meta div { margin: 1px 0; }
+  .abstract { border-left: 3px solid #1d4ed8; background: #eff6ff; padding: 6px 9px; margin-bottom: 4px; }
+  .terms { font-style: italic; margin-bottom: 2px; }
+  .rq { border: 1px solid #1d4ed8; background: #f8fafc; padding: 5px 8px; margin: 4px 0 6px; }
+  table { border-collapse: collapse; margin: 4px 0; width: 100%; break-inside: avoid; }
+  th, td { border: 1px solid #9ca3af; padding: 2px 4px; text-align: left; vertical-align: top; }
+  th { background: #e5e7eb; font-weight: bold; }
+  table.small td, table.small th { font-size: 7.4pt; line-height: 1.22; }
+  .caption { color: #374151; font-size: 7.8pt; margin: 1px 0 6px; }
+  pre { font-family: "DejaVu Sans Mono", Consolas, monospace; font-size: 7.2pt; background: #f8fafc; border: 1px solid #d1d5db; padding: 4px 6px; margin: 3px 0 5px; white-space: pre-wrap; break-inside: avoid; }
+  .pipeline { display: flex; gap: 3px; margin: 4px 0; font-size: 7.4pt; text-align: center; break-inside: avoid; }
+  .pipeline .box { flex: 1; background: #f8fafc; border: 1px solid #94a3b8; border-radius: 3px; padding: 3px; }
+  .pipeline .arr { align-self: center; color: #1d4ed8; font-weight: bold; }
+  .pending { background: #fef2f2; border: 1px dashed #dc2626; padding: 4px 6px; margin: 4px 0; }
+  .pending::before { content: "STUDENT TO WRITE / CONFIRM IN OWN WORDS BEFORE SUBMISSION — remove this box"; display: block; color: #b91c1c; font-weight: bold; font-size: 7.2pt; margin-bottom: 2px; }
+  .ref { margin: 0 0 4px; padding-left: 22px; text-indent: -22px; text-align: left; }
+  code { font-family: "DejaVu Sans Mono", Consolas, monospace; font-size: 7.8pt; }
+  a { color: #1d4ed8; text-decoration: none; }
+
+  .fill { background: #fef08a; padding: 0 2px; }
+  .pending::before { content: "STUDENT TO WRITE / CONFIRM IN OWN WORDS BEFORE SUBMISSION — remove this box"; }
+  .pico { display: block; margin-top: 3px; font-size: 8.2pt; }
+  table.rw td:first-child { width: 22%; } table.rw td:last-child { width: 30%; }
+  ol.next { margin: 2px 0 5px 16px; padding: 0; } ol.next li { margin: 1px 0; text-align: justify; }
+  .two { display: flex; gap: 8px; align-items: flex-start; break-inside: avoid; } .two > div { flex: 1; min-width: 0; }
+  .two table.small td, .two table.small th { font-size: 7.3pt; padding: 1px 3px; }
+  td.nw { white-space: nowrap; }
+  pre { font-size: 6.5pt; line-height: 1.25; }
+  table.rw { break-inside: auto; } table.rw tr { break-inside: avoid; }
+  pre.wx { font-size: 6.2pt; line-height: 1.28; white-space: pre-wrap; }
+
+.todo{background:#fef3c7;color:#92400e} .prelim{border:1px solid #b45309;background:#fffbeb;padding:4px 8px;margin:4px 0;font-size:8pt}</style></head><body>
+<h1>Does Market News Help a Zero-Shot LLM Fill the New-Asset Slots? A Controlled Test on FAR-Trans</h1>
+<div class="meta"><div>Vladislav Kutranov · Team Sparse Signals (Zlata Kranina, Maria Kodzaeva) · LLM4Rec, HSE, Homework 3</div>
+<div>Repository: github.com/elebrane/ML-RS-Project-vladislav-kutranov, folder week9/news_rag · experiment commit: <span class="todo">[add after push]</span></div></div>
+
+<div class="abstract"><b>Abstract.</b> In FAR-Trans most purchases are repeats, and the course baselines show that recency is hard to beat.
+Our HW2 hybrid ("Duet") found that an LLM which only restates code-computed facts adds nothing. In HW3 we narrow the LLM to the one place
+where transaction data have no signal beyond popularity, the slots for never-bought assets below the client's own assets, and give it
+evidence from outside the dataset: a time-safe daily summary of the Greek press coverage of each candidate stock (GDELT), with masked headlines.
+Development results (1 May 2021 cutoff, 1,498 warm clients): For 669 Stock-main FAR-Trans clients (May 2021), a zero-shot Qwen3-4B ranker <i>without</i> news changed mean nDCG@10 over all 1,498 clients by -0.0061 [-0.0087, -0.0037] relative to the popularity order of the same 20 candidates. On the first 174 clients of the cohort order (78 LLM calls; the M run was stopped at the deadline), adding news changed nDCG@10 by <b>+0.0036</b> [-0.0001, +0.0096] relative to the same ranker without news (3 clients better, 1 worse) and by -0.0049 [-0.0122, +0.0009] relative to the popularity order. All results are development results, not official benchmark scores.</div>
+
+<h2>1. Introduction</h2>
+<div class="rq"><b>RQ.</b> For warm FAR-Trans clients whose main asset category is Stock and who have free new-asset slots (669 of 1,498
+development clients at the 1 May 2021 cutoff), does retrieving time-safe Greek-press news evidence for each candidate stock — article
+counts over 30 and 7 days, attention relative to the stock's usual level, average tone and the two latest masked headlines, all first seen
+by GDELT before the cutoff — change nDCG@10 of a zero-shot Qwen3-4B-Instruct ranker relative to the same ranker without news, when the
+candidates, their initial order and the client's own assets are held fixed?</div>
+<p><b>Why this place.</b> Before any LLM run we checked, without a model, every transaction signal we could build for ordering
+never-bought assets: co-buyers of the client's assets, "bought X then Y" transitions, 7- and 90-day popularity, buying spikes, name and
+fund-house similarity, subcategory. On March–April 2021 none beat 30-day popularity (0.548–0.573 vs 0.571 nDCG@10 over buyers; perfect order
+0.601). Of 160 new purchases in the April block, 156 were stocks of large Greek companies (Piraeus, Alpha, NBG, OTE, Mytilineos) — firms
+that the press covers daily. Retail investors are known to buy attention-grabbing stocks [5], so outside news is the one candidate signal
+left. <b>LLM role:</b> Ranker only. It changes only the order (and choice) of never-bought stocks in the free slots; the own-asset block and
+the candidate set come from the HW2 rule cascade and are identical in every arm.</p>
+
+<h2>2. Related Work</h2>
+<table class="small"><tr><th>Study</th><th>What it shows</th><th>What we take</th></tr>
+<tr><td>[1] Sanz-Cruzado, Droukas, McCreadie 2024</td><td>FAR-Trans: customers of a Greek bank, 2018–2022, with prices and metadata; no news.</td><td>Data; we add an external, time-stamped source.</td></tr>
+<tr><td>[2] Hou et al., ECIR 2024 (LLMRank)</td><td>Zero-shot LLMs can rerank a fixed candidate list; sensitive to order and to the history shown.</td><td>Fixed candidates, random shown order, matched no-LLM control.</td></tr>
+<tr><td>[3] Lyu et al., NAACL Findings 2024 (LLM-Rec)</td><td>LLM-generated text about items can improve content-based recommendation.</td><td>Course encoder baseline; we keep the LLM out of encoding (HW2 showed no gain).</td></tr>
+<tr><td>[4] Lewis et al., NeurIPS 2020 (RAG)</td><td>Retrieved evidence conditions generation on a fixed model.</td><td>Evidence retrieval with the candidates held fixed (lecture 9).</td></tr>
+<tr><td>[5] Barber, Odean, RFS 2008</td><td>Individual investors are net buyers of attention-grabbing stocks (news, volume, extreme returns).</td><td>Why news attention could predict first purchases.</td></tr>
+<tr><td>[6] Leetaru, Schrodt 2013 (GDELT)</td><td>Global news monitored and machine-translated, with dates and tone.</td><td>Our news source, filtered to Greek outlets.</td></tr></table>
+
+<h2>3. Method</h2>
+<p><b>List assembly (all arms).</b> (1) Up to 10 own assets in the HW2 rule order (decayed purchase frequency; this is "Duet" cell 1 — the
+Duet v2 encoder gave the same 10-item set as the rule for every client, so it is not used). (2) Free slots k = 10 − own assets. (3) A block of
+the 20 most-bought never-traded assets of the client's main category (bank buyers in the 30 days before the cutoff). C0 fills the k slots in
+this popularity order; A1 and M let the LLM choose k of the 20. The LLM is called only for Stock-main clients (the news layer covers listed
+stocks; the rule reads past data only); other clients keep C0.</p>
+<p><b>Prompt.</b> Client: main category, number of assets, buys in the last and previous 90 days, sectors of past buys, profile. 20 candidate
+rows in random order with random IDs (A10–A99): category, sector, bank buyers in 30 days and rank, 30-day price change; no names or ISINs.
+<b>M</b> adds, under each stock with collected news, one line of numbers (articles in 30 and 7 days, ratio to the stock's own level over the
+previous 60 days, share of coverage, average GDELT tone) and the two latest headlines that name the company, with the name replaced by
+"[company]". <b>A1</b> is the identical prompt without these lines (a unit test checks this). Output: a JSON array of k IDs. Invalid answers
+keep their valid IDs and are completed in the initial order (repair); with no valid ID the list falls back to C0; every case is counted.</p>
+<p><b>Time safety.</b> Transactions, prices and profiles strictly before the cutoff (HW2 assertion). News counts use UTC days up to cutoff − 2;
+a headline is used only if GDELT first saw it before 21:00 UTC on cutoff − 1 (Athens midnight); both are asserted and unit-tested.
+<b>Model.</b> Qwen/Qwen3-4B-Instruct-2507 @ cdbee75, greedy, thinking off, float16 on Apple M3 Pro (MPS, 18 GB), torch 2.11.0,
+transformers 4.57.6, 90 new tokens. Code: <code>block_ranker.py</code>, <code>news.py</code>, <code>collect_gdelt.py</code>, 6 unit tests.</p>
+
+<h2>4. Experiments</h2>
+<p><b>Protocol (fixed before comparing methods).</b> Development cohort D1: the first 3,000 warm users of the starter order with ≥1 Buy in
+the 90 days before 1 May 2021 (1,498 clients; 408 bought in May; 160 bought a never-traded asset); 30-day window; repeats allowed; selection
+from past data only (protocol_hash e8a41099ddb7, hw3_protocol_hash 381cbd19c21f). Prompt checks used April 2021 only. Teaching set D0: the
+starter's 100 users at 1 June 2021 (protocol_hash 50efd4aeb415 = the starter run). Primary metric: mean nDCG@10 over all clients (empty
+truth = 0); paired bootstrap (10,000 resamples, seed 0) and sign test.</p>
+<table class="small"><tr><th>Method</th><th>nDCG@10 all (n)</th><th>buyers (n)</th><th>bought a new asset (n)</th></tr><tr><td>Popularity</td><td>0.0968 (1498)</td><td>0.3556 (408)</td><td>0.2841 (160)</td></tr><tr><td>CBF</td><td>0.0880 (1498)</td><td>0.3230 (408)</td><td>0.1934 (160)</td></tr><tr><td>Latest buy</td><td>0.1478 (1498)</td><td>0.5427 (408)</td><td>0.3049 (160)</td></tr><tr><td>Latest buy or sell</td><td>0.1469 (1498)</td><td>0.5393 (408)</td><td>0.2984 (160)</td></tr><tr><td>C0: initial order (matched control)</td><td>0.1486 (1498)</td><td>0.5454 (408)</td><td>0.3084 (160)</td></tr><tr><td>A1: LLM ranker, no news</td><td>0.1425 (1498)</td><td>0.5231 (408)</td><td>0.2516 (160)</td></tr><tr><td>Ceiling: perfect block order</td><td>0.1545 (1498)</td><td>0.5672 (408)</td><td>0.3639 (160)</td></tr></table>
+<div class="caption">Table 1. D1, May 2021. The ceiling reorders the block perfectly and bounds what any arm can reach: +0.0059 over C0 on all clients.</div>
+<table class="small"><tr><th>Contrast</th><th>Δ all users [95% CI]</th><th>better / worse</th><th>sign p</th><th>Δ buyers [95% CI]</th></tr><tr><td>llm_nonews − c0_popularity<br><span class='caption'>LLM reordering without news vs control</span></td><td>-0.0061 [-0.0087, -0.0037]</td><td>11 / 36</td><td>0.0003</td><td>-0.0223 [-0.0319, -0.0137]</td></tr></table>
+<div class="caption">Table 2. Paired differences on the same 1,498 clients (clients with identical lists contribute 0).</div>
+<p><b>News signal without an LLM (April 2021, tuning month).</b> Ordering the block by news attention in code (0.5512 over buyers), by volume (0.5520) or by tone (0.5624) does not beat the popularity order (0.5710); attention vs C0 on all clients: -0.0056 [-0.0086, -0.0027], 13/42. The collected news numbers alone carry no usable signal for first purchases in this month.</p>
+<h3>Main method M on a fixed prefix of D1</h3><p>M was run on the clients in the cohort's own order (a rule on past data only) until the deadline: the first 174 clients, of whom 78 Stock-main clients got an LLM call. All arms are re-scored on exactly these clients.</p><table class="small"><tr><th>Method</th><th>nDCG@10 all (n)</th><th>buyers (n)</th><th>bought a new asset (n)</th></tr><tr><td>Popularity</td><td>0.1021 (174)</td><td>0.3780 (47)</td><td>0.3554 (23)</td></tr><tr><td>CBF</td><td>0.0945 (174)</td><td>0.3499 (47)</td><td>0.2507 (23)</td></tr><tr><td>Latest buy</td><td>0.1521 (174)</td><td>0.5631 (47)</td><td>0.4130 (23)</td></tr><tr><td>Latest buy or sell</td><td>0.1523 (174)</td><td>0.5640 (47)</td><td>0.3983 (23)</td></tr><tr><td>C0: initial order (matched control)</td><td>0.1524 (174)</td><td>0.5642 (47)</td><td>0.3977 (23)</td></tr><tr><td>C-news: attention, code</td><td>0.1459 (174)</td><td>0.5401 (47)</td><td>0.3486 (23)</td></tr><tr><td>C-news: volume, code</td><td>0.1458 (174)</td><td>0.5398 (47)</td><td>0.3478 (23)</td></tr><tr><td>C-news: tone, code</td><td>0.1463 (174)</td><td>0.5415 (47)</td><td>0.3513 (23)</td></tr><tr><td>A1: LLM ranker, no news</td><td>0.1440 (174)</td><td>0.5329 (47)</td><td>0.3338 (23)</td></tr><tr><td><b>M: LLM ranker + news</b></td><td>0.1475 (174)</td><td>0.5461 (47)</td><td>0.3607 (23)</td></tr><tr><td>Ceiling: perfect block order</td><td>0.1572 (174)</td><td>0.5821 (47)</td><td>0.4343 (23)</td></tr></table><div class="caption">Table 4. First 174 clients of D1 (same protocol).</div><table class="small"><tr><th>Contrast</th><th>Δ all users [95% CI]</th><th>better / worse</th><th>sign p</th><th>Δ buyers [95% CI]</th></tr><tr><td>llm_full − llm_nonews<br><span class='caption'>A1: effect of news for the LLM (H1)</span></td><td>+0.0036 [-0.0001, +0.0096]</td><td>3 / 1</td><td>0.6250</td><td>+0.0132 [-0.0002, +0.0354]</td></tr><tr><td>llm_full − c0_popularity<br><span class='caption'>method vs matched control</span></td><td>-0.0049 [-0.0122, +0.0009]</td><td>4 / 3</td><td>1.0000</td><td>-0.0181 [-0.0447, +0.0034]</td></tr><tr><td>llm_nonews − c0_popularity<br><span class='caption'>LLM reordering without news vs control</span></td><td>-0.0084 [-0.0169, -0.0017]</td><td>2 / 5</td><td>0.4531</td><td>-0.0312 [-0.0606, -0.0064]</td></tr><tr><td>llm_full − cnews_attention<br><span class='caption'>H2: LLM with news vs code with news</span></td><td>+0.0016 [-0.0001, +0.0043]</td><td>3 / 1</td><td>0.6250</td><td>+0.0060 [-0.0005, +0.0156]</td></tr><tr><td>cnews_attention − c0_popularity<br><span class='caption'>news signal in code (go/no-go)</span></td><td>-0.0065 [-0.0141, -0.0007]</td><td>2 / 5</td><td>0.4531</td><td>-0.0240 [-0.0515, -0.0024]</td></tr><tr><td>llm_full − latest_buy<br><span class='caption'>reference: vs best provided baseline</span></td><td>-0.0046 [-0.0170, +0.0076]</td><td>9 / 12</td><td>0.6636</td><td>-0.0170 [-0.0609, +0.0282]</td></tr></table><div class="caption">Table 5. Paired differences on the same prefix.</div>
+<p><b>Validity and cost.</b> A1: 669 valid answers, 0 repaired, 0 fallbacks
+for 669 calls; generation 86 min (7.7 s per client, ~3,760-character prompts); preparation of the cohort 13 s.
+M: 78 valid, 0 repaired, 0 fallbacks for 78 calls; generation 111 min (86 s per client: news made prompts 2.4–2.9k tokens instead of 1.2k, and the Mac slowed to 70–145 s per call, so M covers only the first 174 clients of D1. <b>News coverage:</b> GDELT rate limits allowed a full download for only part of the 30 planned stocks within the deadline; at the
+May cutoff 16 stocks in clients' blocks have news counts, 13 of them with articles
+in the last 30 days and 6 with a headline that names the company; the three largest banks are not covered
+(collection stopped by the rate limit). News collection took about 12 h of wall time, mostly waiting.</p>
+<p><b>Teaching set D0.</b> Popularity 0.0286, CBF 0.0201, Latest buy
+0.0277, Latest buy or sell 0.0271, C0 0.0262;
+course LLMRank 0.0201 (HW2 results, same protocol hash). The perfect block order equals C0 here, so no arm can improve D0; conclusions rest on D1.</p>
+
+<h2>5. Discussion and failure analysis</h2>
+<table class="small"><tr><th>Picks of the LLM vs C0 (same clients, same k)</th><th>A1, 669 clients</th><th>A1, first 78</th><th>M, first 78</th></tr><tr><td>share of picks that C0 also shows</td><td>0.464</td><td>0.451</td><td>0.478</td></tr><tr><td>share equal to the first k shown (random order)</td><td>0.277</td><td>0.26</td><td>0.261</td></tr><tr><td>median bank-popularity rank, LLM / C0</td><td>9 / 6</td><td>10 / 6</td><td>8 / 6</td></tr><tr><td>picks in a sector the client bought before, LLM / C0</td><td>0.177 / 0.222</td><td>0.182 / 0.202</td><td>0.169 / 0.202</td></tr><tr><td>mean 30-day price change of picks, LLM / C0</td><td>+13.3% / +4.3%</td><td>+13.7% / +4.4%</td><td>+13.4% / +4.4%</td></tr><tr><td>bought assets the LLM removed from C0 slots</td><td>33</td><td>6</td><td>5</td></tr><tr><td>bought assets the LLM brought into the slots</td><td>4</td><td>0</td><td>1</td></tr></table>
+<div class="caption">Table 3. What the LLM picked instead of the popularity order (669 Stock-main clients, May).</div>
+<p><b>Observation.</b> Without news, the LLM keeps only about half of C0's picks, chooses less popular stocks and stocks that rose more in
+the last 30 days, and is not biased towards the first rows shown. It removed 33 assets that clients
+then bought and brought in 4. <b>Possible explanation (not tested):</b> the model reads "price change" as a reason
+to buy, while in this bank the crowd signal (how many clients bought it) is what predicts the next first purchase. <b>With news (M, first 78 clients):</b> the picks barely move — overlap with C0 0.478 vs 0.451 without news, median popularity rank 8 vs 10, the same preference for recent price gains; it drops 5 bought assets instead of 6. News nudges the model slightly back towards popular stocks but does not change what drives its choice.</p>
+<p><b>Limitations.</b> One development month and one cutoff; the effect can only appear for the ~80 clients who bought something from their block
+(April estimate). Partial news coverage, no large banks. GDELT tone is lexicon-based on machine translation; title matching is precise but
+misses articles that do not name the company in the title. Not run for lack of time: the placebo with news moved to other stocks (A3), numbers
+without headlines (A2), a second shown order and visible names; these are implemented (<code>run_hw3_night2.command</code>). Purchase
+prediction is not suitability or profit; not investment advice.</p>
+<p><b>Team decisions and my contribution.</b> Agreed: shared data and course protocol, the four baselines and nDCG@10; each member tests one component. Zlata (asset-field filling, all 10,404 warm clients, 1 June 2021): LLM-inferred sector/industry/region (0.0427) ≈ paraphrase (0.0424), a keyword-rule ablation adds nothing, Latest buy is strongest (0.0526). Maria: history weights for the encoder. Our three parts agree: on top of what code already does, the LLM has not yet given a significant gain, and repeat purchases are the main signal. Proposed merge (not yet confirmed by all): the final system is the cascade "own assets first, then new assets by popularity" (it contains the Latest-buy idea and is not worse than it on May: 0.1486 vs 0.1478); each component plugs into its own slot as a separate ablation — Maria: order of own assets, Zlata: filled fields for the content-based part and candidate descriptions, me: order of the new-asset block — and only components not worse than the cascade on the official set enter the final submission. Open: who assembles the shared cascade code and when the final version is frozen. My work: the HW3 question and its narrowing from HW2, the no-LLM signal checks, the news design, all runs on my Mac. <b>My own check:</b> client 0E72D1 (D1, May): its only May purchase is INTRACOM S.A. HOLDINGS (GRS087003000, bought 2021-05-10, from transactions.csv). In predictions.csv it is at rank 4 for M (llm_full) and rank 8 for C0. With one relevant item IDCG = 1, so nDCG@10 = 1/log2(4+1) = 0.4307 for M and 1/log2(8+1) = 0.3155 for C0, both equal to per_user.json. I also opened one headline used in the May prompts (902.gr, "Τέσσερις απολύσεις σε μια εβδομάδα από την ΤΕΡΝΑ ΕΝΕΡΓΕΙΑΚΗ"): GDELT first saw it at 17:30 UTC on 30 April 2021, before the 1 May cutoff boundary.</p>
+
+<h2>6. AI Usage Disclosure</h2>
+<ul><li><b>Tools:</b> Claude Opus 5.5 (Anthropic) in the Claude app with file, shell and Mac tools; Qwen3-4B-Instruct-2507 is the model under test.</li>
+<li><b>Used for:</b> reading the assignment and lecture, the no-LLM signal checks, the code (collector, news layer, ranker, tests, run scripts),
+the choice analysis, and drafting this report from the run outputs; numbers in tables are produced by <code>report/build_hw3_report.py</code>.</li>
+<li><b>Checks the AI performed:</b> baselines and C0 reproduce HW2 on D0 to 4 decimals; C0 equals the HW2 rule list for all 100 D0 users;
+6 unit tests (time boundary, masking, parsing, arm isolation, fake-model run); collector tested on synthetic GDELT responses.</li></ul>
+
+<h2>References</h2>
+<p class="small">[1] J. Sanz-Cruzado, N. Droukas, R. McCreadie. FAR-Trans: An Investment Dataset for Financial Asset Recommendation. IJCAI Workshop on Recommender Systems in Finance, 2024.<br>
+[2] Y. Hou et al. Large Language Models are Zero-Shot Rankers for Recommender Systems. ECIR 2024.<br>
+[3] H. Lyu et al. LLM-Rec: Personalized Recommendation via Prompting Large Language Models. Findings of NAACL 2024.<br>
+[4] P. Lewis et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. NeurIPS 2020.<br>
+[5] B. Barber, T. Odean. All That Glitters: The Effect of Attention and News on the Buying Behavior of Individual and Institutional Investors. Review of Financial Studies 21(2), 2008.<br>
+[6] K. Leetaru, P. Schrodt. GDELT: Global Data on Events, Location and Tone, 1979–2012. ISA Annual Convention, 2013.</p>
+</body></html>

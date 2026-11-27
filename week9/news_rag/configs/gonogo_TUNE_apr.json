@@ -1,0 +1,11 @@
+{
+ "cohort": "TUNE_apr",
+ "run_name": "gonogo_code_news",
+ "arms": [
+  "c0_popularity",
+  "cnews_attention",
+  "cnews_volume",
+  "cnews_tone"
+ ],
+ "note": "news signal in code on the tuning month; decides nothing about the LLM arms, which run anyway"
+}

@@ -1,0 +1,70 @@
+{
+ "assets": 55,
+ "assets_without_raw": [
+  "GRS145003000",
+  "GRS191213008",
+  "GRS213213002",
+  "GRS014003032",
+  "GRS346003007",
+  "GRS372003004",
+  "GRS015003007",
+  "GRS245213004",
+  "GRS003003035",
+  "GRS004013009",
+  "GRS001003037",
+  "GRS096003009",
+  "GRS282183003",
+  "CY0109232112",
+  "GRS368313003",
+  "GRS472003011",
+  "GRS505003004",
+  "GRS289103004",
+  "GRS475003018",
+  "GRS461003006",
+  "GRS144003001",
+  "GRS204003008",
+  "GRS477003008",
+  "GRS106003007",
+  "GRS439003005",
+  "GRS498003003",
+  "GRS510003015",
+  "GRS147233001",
+  "GRS295003008",
+  "GRS332073006",
+  "GRS384003000",
+  "GRS345503007",
+  "GRS277023008",
+  "GRS517003000",
+  "GRS427003009",
+  "GRS473003002",
+  "100974271034",
+  "GRS070003009"
+ ],
+ "daily_rows": 3888,
+ "headlines": 822,
+ "headlines_title_matched": 101,
+ "title_match_rate": 0.123,
+ "coverage": {
+  "D0_june": {
+   "cutoff": "2021-06-01",
+   "tracked_stocks_in_blocks": 16,
+   "with_articles_30d": 12,
+   "with_headline": 3,
+   "median_articles_30d": 4
+  },
+  "D1_may": {
+   "cutoff": "2021-05-01",
+   "tracked_stocks_in_blocks": 16,
+   "with_articles_30d": 13,
+   "with_headline": 6,
+   "median_articles_30d": 4
+  },
+  "TUNE_apr": {
+   "cutoff": "2021-04-01",
+   "tracked_stocks_in_blocks": 16,
+   "with_articles_30d": 11,
+   "with_headline": 5,
+   "median_articles_30d": 2
+  }
+ }
+}

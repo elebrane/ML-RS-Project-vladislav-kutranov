@@ -1,0 +1,12 @@
+# data, caches, per-client outputs and logs stay local (session logs are never committed)
+news_rag/news/gdelt_raw/
+news_rag/news/headlines.jsonl
+news_rag/news/linking_check_sample.csv
+news_rag/outputs/**/generation_cache*
+news_rag/outputs/**/predictions.csv
+news_rag/outputs/**/per_user.json
+news_rag/outputs/**/details.json
+news_rag/outputs/**/blocks.json
+*.log
+__pycache__/
+hw3_submission/

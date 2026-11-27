@@ -1,0 +1,168 @@
+{
+ "table": {
+  "popularity": {
+   "all": 0.0878,
+   "n_all": 1491,
+   "buyers": 0.3118,
+   "n_buyers": 420,
+   "bought_new": 0.245,
+   "n_bought_new": 180,
+   "with_slots": 0.0749,
+   "n_with_slots": 1286
+  },
+  "cbf": {
+   "all": 0.0948,
+   "n_all": 1491,
+   "buyers": 0.3365,
+   "n_buyers": 420,
+   "bought_new": 0.1926,
+   "n_bought_new": 180,
+   "with_slots": 0.0892,
+   "n_with_slots": 1286
+  },
+  "latest_buy": {
+   "all": 0.1605,
+   "n_all": 1491,
+   "buyers": 0.5696,
+   "n_buyers": 420,
+   "bought_new": 0.3,
+   "n_bought_new": 180,
+   "with_slots": 0.1318,
+   "n_with_slots": 1286
+  },
+  "latest_buy_or_sell": {
+   "all": 0.1562,
+   "n_all": 1491,
+   "buyers": 0.5546,
+   "n_buyers": 420,
+   "bought_new": 0.2937,
+   "n_bought_new": 180,
+   "with_slots": 0.1305,
+   "n_with_slots": 1286
+  },
+  "c0_popularity": {
+   "all": 0.1608,
+   "n_all": 1491,
+   "buyers": 0.571,
+   "n_buyers": 420,
+   "bought_new": 0.3162,
+   "n_bought_new": 180,
+   "with_slots": 0.1324,
+   "n_with_slots": 1286
+  },
+  "cnews_attention": {
+   "all": 0.1553,
+   "n_all": 1491,
+   "buyers": 0.5512,
+   "n_buyers": 420,
+   "bought_new": 0.27,
+   "n_bought_new": 180,
+   "with_slots": 0.1259,
+   "n_with_slots": 1286
+  },
+  "cnews_volume": {
+   "all": 0.1555,
+   "n_all": 1491,
+   "buyers": 0.552,
+   "n_buyers": 420,
+   "bought_new": 0.2719,
+   "n_bought_new": 180,
+   "with_slots": 0.1262,
+   "n_with_slots": 1286
+  },
+  "cnews_tone": {
+   "all": 0.1584,
+   "n_all": 1491,
+   "buyers": 0.5624,
+   "n_buyers": 420,
+   "bought_new": 0.2961,
+   "n_bought_new": 180,
+   "with_slots": 0.1295,
+   "n_with_slots": 1286
+  },
+  "oracle_block": {
+   "all": 0.1692,
+   "n_all": 1491,
+   "buyers": 0.6006,
+   "n_buyers": 420,
+   "bought_new": 0.3853,
+   "n_bought_new": 180,
+   "with_slots": 0.142,
+   "n_with_slots": 1286
+  }
+ },
+ "contrasts": [
+  {
+   "a": "cnews_attention",
+   "b": "c0_popularity",
+   "question": "news signal in code (go/no-go)",
+   "all_users": {
+    "diff": -0.0056,
+    "ci95": [
+     -0.0086,
+     -0.0027
+    ],
+    "better": 13,
+    "worse": 42,
+    "sign_p": 0.0001
+   },
+   "buyers": {
+    "diff": -0.0198,
+    "ci95": [
+     -0.0302,
+     -0.0098
+    ],
+    "better": 13,
+    "worse": 42,
+    "sign_p": 0.0001
+   }
+  }
+ ],
+ "subset_diagnostics": {},
+ "meta": {
+  "run_name": "gonogo_code_news",
+  "cohort": {
+   "name": "TUNE_apr",
+   "cutoff": "2021-04-01",
+   "max_users": 3000,
+   "active_days": 90,
+   "role": "prompt smoke test and the C-news go/no-go only"
+  },
+  "arms": [
+   "c0_popularity",
+   "cnews_attention",
+   "cnews_volume",
+   "cnews_tone"
+  ],
+  "subset_arms": [],
+  "subset_users": 0,
+  "protocol_hash": "5a53a633ce778f0ff022659351944f6adc9bf3726817d259901a24f439b7ad34",
+  "hw3_protocol_hash": "f8265839ca5ffb89dd62c244e64668632d5f9253eca7f034265aeb62e5b9f163",
+  "users": 1491,
+  "lists_changed_vs_c0": {
+   "cnews_attention": 657,
+   "cnews_volume": 653,
+   "cnews_tone": 654
+  },
+  "llm_status": {},
+  "news_coverage": {
+   "blocks_with_slots": 1286,
+   "blocks_with_tracked_stocks": 657,
+   "tracked_candidates": 8406,
+   "with_articles_30d": 6001,
+   "with_headlines": 2584
+  },
+  "prompt_chars": {},
+  "generator": {
+   "backend": "none"
+  },
+  "prompt": "block_ranker_v1.txt",
+  "max_new_tokens": 90,
+  "seconds": {
+   "preparation_cohort_and_blocks": 12.9,
+   "recommendation_loop_wall": 1.1,
+   "generation_by_arm_incl_cached": {},
+   "total_wall": 18.7
+  }
+ }
+}

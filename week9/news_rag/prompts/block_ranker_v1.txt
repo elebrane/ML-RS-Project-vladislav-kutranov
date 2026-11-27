@@ -1,0 +1,16 @@
+You help a bank decide which NEW assets to show to one investor. The investor's own assets are
+already shown at the top of the list; you fill the remaining {slots} places with assets the
+investor has never bought.
+
+INVESTOR
+{client_block}
+
+CANDIDATES (never bought by this investor, same asset category; listed in random order)
+{candidate_rows}
+
+TASK
+Choose the {slots} candidates this investor is most likely to buy in the next 30 days, most likely first.
+Use only the information above. Do not forecast prices and do not judge investment quality.
+
+OUTPUT
+A JSON array of exactly {slots} different candidate IDs from the list, and nothing else.

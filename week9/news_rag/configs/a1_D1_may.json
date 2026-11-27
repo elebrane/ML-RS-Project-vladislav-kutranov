@@ -1,0 +1,17 @@
+{
+ "cohort": "D1_may",
+ "run_name": "a1_now",
+ "arms": [
+  "c0_popularity",
+  "llm_nonews"
+ ],
+ "llm_scope": "stock_main",
+ "generation": {
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "device": "auto",
+  "dtype": "float16",
+  "context_limit": 8192
+ },
+ "max_new_tokens": 90
+}

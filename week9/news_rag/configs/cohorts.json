@@ -1,0 +1,8 @@
+{
+  "TUNE_apr": {"name": "TUNE_apr", "cutoff": "2021-04-01", "max_users": 3000, "active_days": 90,
+               "role": "prompt smoke test and the C-news go/no-go only"},
+  "D1_may":   {"name": "D1_may", "cutoff": "2021-05-01", "max_users": 3000, "active_days": 90,
+               "role": "development evaluation (main experiment and ablations), run once per arm"},
+  "D0_june":  {"name": "D0_june", "cutoff": "2021-06-01", "max_users": 100, "active_days": null,
+               "role": "HW2 teaching set (starter 100 warm users), protocol hash must equal the starter run"}
+}

@@ -1,0 +1,99 @@
+{
+ "table": {
+  "popularity": {
+   "all": 0.0878,
+   "n_all": 1491,
+   "buyers": 0.3118,
+   "n_buyers": 420,
+   "bought_new": 0.245,
+   "n_bought_new": 180,
+   "with_slots": 0.0749,
+   "n_with_slots": 1286
+  },
+  "cbf": {
+   "all": 0.0949,
+   "n_all": 1491,
+   "buyers": 0.337,
+   "n_buyers": 420,
+   "bought_new": 0.1926,
+   "n_bought_new": 180,
+   "with_slots": 0.0893,
+   "n_with_slots": 1286
+  },
+  "latest_buy": {
+   "all": 0.1605,
+   "n_all": 1491,
+   "buyers": 0.5696,
+   "n_buyers": 420,
+   "bought_new": 0.3,
+   "n_bought_new": 180,
+   "with_slots": 0.1318,
+   "n_with_slots": 1286
+  },
+  "latest_buy_or_sell": {
+   "all": 0.1562,
+   "n_all": 1491,
+   "buyers": 0.5546,
+   "n_buyers": 420,
+   "bought_new": 0.2937,
+   "n_bought_new": 180,
+   "with_slots": 0.1305,
+   "n_with_slots": 1286
+  },
+  "c0_popularity": {
+   "all": 0.1608,
+   "n_all": 1491,
+   "buyers": 0.571,
+   "n_buyers": 420,
+   "bought_new": 0.3162,
+   "n_bought_new": 180,
+   "with_slots": 0.1324,
+   "n_with_slots": 1286
+  },
+  "oracle_block": {
+   "all": 0.1692,
+   "n_all": 1491,
+   "buyers": 0.6006,
+   "n_buyers": 420,
+   "bought_new": 0.3853,
+   "n_bought_new": 180,
+   "with_slots": 0.142,
+   "n_with_slots": 1286
+  }
+ },
+ "contrasts": [],
+ "subset_diagnostics": {},
+ "meta": {
+  "run_name": "nollm_nonews",
+  "cohort": {
+   "name": "TUNE_apr",
+   "cutoff": "2021-04-01",
+   "max_users": 3000,
+   "active_days": 90,
+   "role": "prompt smoke test and the C-news go/no-go only"
+  },
+  "arms": [
+   "c0_popularity"
+  ],
+  "subset_arms": [],
+  "subset_users": 0,
+  "protocol_hash": "5a53a633ce778f0ff022659351944f6adc9bf3726817d259901a24f439b7ad34",
+  "hw3_protocol_hash": "f8265839ca5ffb89dd62c244e64668632d5f9253eca7f034265aeb62e5b9f163",
+  "users": 1491,
+  "lists_changed_vs_c0": {},
+  "llm_status": {},
+  "news_coverage": {},
+  "prompt_chars": {},
+  "generator": {
+   "backend": "none"
+  },
+  "prompt": "block_ranker_v1.txt",
+  "max_new_tokens": 90,
+  "seconds": {
+   "preparation_cohort_and_blocks": 13.8,
+   "recommendation_loop_wall": 0.0,
+   "generation_by_arm_incl_cached": {},
+   "total_wall": 13.9
+  }
+ }
+}

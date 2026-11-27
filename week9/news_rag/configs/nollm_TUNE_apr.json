@@ -1,0 +1,7 @@
+{
+ "cohort": "TUNE_apr",
+ "run_name": "nollm_nonews",
+ "arms": [
+  "c0_popularity"
+ ]
+}

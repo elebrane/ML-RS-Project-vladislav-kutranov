@@ -1,0 +1,99 @@
+{
+ "table": {
+  "popularity": {
+   "all": 0.0968,
+   "n_all": 1498,
+   "buyers": 0.3556,
+   "n_buyers": 408,
+   "bought_new": 0.2841,
+   "n_bought_new": 160,
+   "with_slots": 0.0792,
+   "n_with_slots": 1289
+  },
+  "cbf": {
+   "all": 0.0878,
+   "n_all": 1498,
+   "buyers": 0.3223,
+   "n_buyers": 408,
+   "bought_new": 0.1933,
+   "n_bought_new": 160,
+   "with_slots": 0.0824,
+   "n_with_slots": 1289
+  },
+  "latest_buy": {
+   "all": 0.1478,
+   "n_all": 1498,
+   "buyers": 0.5427,
+   "n_buyers": 408,
+   "bought_new": 0.3049,
+   "n_bought_new": 160,
+   "with_slots": 0.1235,
+   "n_with_slots": 1289
+  },
+  "latest_buy_or_sell": {
+   "all": 0.1469,
+   "n_all": 1498,
+   "buyers": 0.5393,
+   "n_buyers": 408,
+   "bought_new": 0.2984,
+   "n_bought_new": 160,
+   "with_slots": 0.1235,
+   "n_with_slots": 1289
+  },
+  "c0_popularity": {
+   "all": 0.1486,
+   "n_all": 1498,
+   "buyers": 0.5454,
+   "n_buyers": 408,
+   "bought_new": 0.3084,
+   "n_bought_new": 160,
+   "with_slots": 0.1258,
+   "n_with_slots": 1289
+  },
+  "oracle_block": {
+   "all": 0.1545,
+   "n_all": 1498,
+   "buyers": 0.5672,
+   "n_buyers": 408,
+   "bought_new": 0.3639,
+   "n_bought_new": 160,
+   "with_slots": 0.1327,
+   "n_with_slots": 1289
+  }
+ },
+ "contrasts": [],
+ "subset_diagnostics": {},
+ "meta": {
+  "run_name": "nollm_nonews",
+  "cohort": {
+   "name": "D1_may",
+   "cutoff": "2021-05-01",
+   "max_users": 3000,
+   "active_days": 90,
+   "role": "development evaluation (main experiment and ablations), run once per arm"
+  },
+  "arms": [
+   "c0_popularity"
+  ],
+  "subset_arms": [],
+  "subset_users": 0,
+  "protocol_hash": "e8a41099ddb73e0ab6299f3aebdab9dec63d36887eb4e0c50073fae592433bab",
+  "hw3_protocol_hash": "381cbd19c21f5599730fcf8f722734712400dc30086e0dd51433fbdc87d8b0d4",
+  "users": 1498,
+  "lists_changed_vs_c0": {},
+  "llm_status": {},
+  "news_coverage": {},
+  "prompt_chars": {},
+  "generator": {
+   "backend": "none"
+  },
+  "prompt": "block_ranker_v1.txt",
+  "max_new_tokens": 90,
+  "seconds": {
+   "preparation_cohort_and_blocks": 14.3,
+   "recommendation_loop_wall": 0.0,
+   "generation_by_arm_incl_cached": {},
+   "total_wall": 14.4
+  }
+ }
+}

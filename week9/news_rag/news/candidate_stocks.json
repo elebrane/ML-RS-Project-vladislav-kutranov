@@ -1,0 +1,617 @@
+[
+ {
+  "isin": "GRS145003000",
+  "name": "GEK TERNA HOLDING, REAL ESTATE, CONSTRUCTION (CR)",
+  "short": "ΓΕΚΤΕΡΝΑ",
+  "sector": "Industrials",
+  "industry": "Engineering & Construction",
+  "clients": {
+   "TUNE_apr": 633,
+   "D1_may": 641,
+   "D0_june": 61
+  }
+ },
+ {
+  "isin": "GRS496003005",
+  "name": "TERNA ENERGY S.A. (CR)",
+  "short": "ΤΕΝΕΡΓ",
+  "sector": "Utilities",
+  "industry": "Utilities - Renewable",
+  "clients": {
+   "TUNE_apr": 621,
+   "D1_may": 631,
+   "D0_june": 58
+  }
+ },
+ {
+  "isin": "BE0974303357",
+  "name": "CENERGY HOLDINGS SA",
+  "short": "CENER",
+  "sector": "Industrials",
+  "industry": "Electrical Equipment & Parts",
+  "clients": {
+   "TUNE_apr": 616,
+   "D1_may": 625,
+   "D0_june": 59
+  }
+ },
+ {
+  "isin": "GRS087003000",
+  "name": "INTRACOM S.A. HOLDINGS (CR)",
+  "short": "ΙΝΤΚΑ",
+  "sector": "Technology",
+  "industry": "Communication Equipment",
+  "clients": {
+   "TUNE_apr": 617,
+   "D1_may": 625,
+   "D0_june": 56
+  }
+ },
+ {
+  "isin": "GRS359353000",
+  "name": "ATHENS WATER SUPPLY AND SEWERAGE S.A.",
+  "short": "ΕΥΔΑΠ",
+  "sector": "Utilities",
+  "industry": "Utilities - Regulated Water",
+  "clients": {
+   "TUNE_apr": 615,
+   "D1_may": 641,
+   "D0_june": 27
+  }
+ },
+ {
+  "isin": "GRS314003005",
+  "name": "MARFIN INVESTEMENT GROUP S.A.",
+  "short": "ΜΙΓ",
+  "sector": "Consumer Defensive",
+  "industry": "Packaged Foods",
+  "clients": {
+   "TUNE_apr": 585,
+   "D1_may": 600,
+   "D0_june": 58
+  }
+ },
+ {
+  "isin": "GRS191213008",
+  "name": "ELLAKTOR S.A. (CR)",
+  "short": "ΕΛΛΑΚΤΩΡ",
+  "sector": "Industrials",
+  "industry": "Engineering & Construction",
+  "clients": {
+   "TUNE_apr": 581,
+   "D1_may": 586,
+   "D0_june": 54
+  }
+ },
+ {
+  "isin": "GRS260333000",
+  "name": "HELLENIC TELECOM ORGANIZATION SA",
+  "short": "ΟΤΕ",
+  "sector": "Communication Services",
+  "industry": "Telecom Services",
+  "clients": {
+   "TUNE_apr": 566,
+   "D1_may": 581,
+   "D0_june": 59
+  }
+ },
+ {
+  "isin": "GRS419003009",
+  "name": "OPAP SA",
+  "short": "ΟΠΑΠ",
+  "sector": "Consumer Cyclical",
+  "industry": "Gambling",
+  "clients": {
+   "TUNE_apr": 572,
+   "D1_may": 577,
+   "D0_june": 54
+  }
+ },
+ {
+  "isin": "GRS426003000",
+  "name": "MOTOR OIL REFINERIES SA",
+  "short": "ΜΟΗ",
+  "sector": "Energy",
+  "industry": "Oil & Gas Refining & Marketing",
+  "clients": {
+   "TUNE_apr": 567,
+   "D1_may": 574,
+   "D0_june": 55
+  }
+ },
+ {
+  "isin": "GRS518003009",
+  "name": "HOLDING COMPANY ADMIE IPTO S.A.",
+  "short": "ΑΔΜΗΕ",
+  "sector": "Utilities",
+  "industry": "Utilities - Independent Power Producers",
+  "clients": {
+   "TUNE_apr": 561,
+   "D1_may": 573,
+   "D0_june": 52
+  }
+ },
+ {
+  "isin": "GRS393503008",
+  "name": "MYTILINAIOS SA",
+  "short": "ΜΥΤΙΛ",
+  "sector": "Industrials",
+  "industry": "Conglomerates",
+  "clients": {
+   "TUNE_apr": 540,
+   "D1_may": 564,
+   "D0_june": 51
+  }
+ },
+ {
+  "isin": "GRS281003004",
+  "name": "ELVAL HALCOR HELLENIC COPPER AND ALUMINIUM INDUSTR",
+  "short": "ΕΛΧΑ",
+  "sector": "Industrials",
+  "industry": "Metal Fabrication",
+  "clients": {
+   "TUNE_apr": 420,
+   "D1_may": 641,
+   "D0_june": 61
+  }
+ },
+ {
+  "isin": "GRS434003000",
+  "name": "PPC SA",
+  "short": "ΔΕΗ",
+  "sector": "Utilities",
+  "industry": "Utilities - Renewable",
+  "clients": {
+   "TUNE_apr": 504,
+   "D1_may": 522,
+   "D0_june": 50
+  }
+ },
+ {
+  "isin": "GRS298343005",
+  "name": "HELLENiQ ENERGY HOLDINGS S.A.",
+  "short": "ΕΛΠΕ",
+  "sector": "Energy",
+  "industry": "Oil & Gas Integrated",
+  "clients": {
+   "TUNE_apr": 578,
+   "D1_may": 491,
+   "D0_june": 6
+  }
+ },
+ {
+  "isin": "GRS323003012",
+  "name": "EUROBANK ERGASIAS SERVICES AND HOLDINGS S.A.",
+  "short": "ΕΥΡΩΒ",
+  "sector": "Financial Services",
+  "industry": "Banks - Regional",
+  "clients": {
+   "TUNE_apr": 436,
+   "D1_may": 430,
+   "D0_june": 43
+  }
+ },
+ {
+  "isin": "GRS239003007",
+  "name": "THRACE PLASTICS S.A.(CR)",
+  "short": "ΠΛΑΘ",
+  "sector": "Consumer Cyclical",
+  "industry": "Textile Manufacturing",
+  "clients": {
+   "TUNE_apr": 139,
+   "D1_may": 655,
+   "D0_june": 61
+  }
+ },
+ {
+  "isin": "GRS395363005",
+  "name": "HELLENIC EXCHANGES-ATHENS STOCK EXCHANGE S.A",
+  "short": "ΕΧΑΕ",
+  "sector": "Financial Services",
+  "industry": "Financial Data & Stock Exchanges",
+  "clients": {
+   "TUNE_apr": 512,
+   "D1_may": 290,
+   "D0_june": 1
+  }
+ },
+ {
+  "isin": "GRS213213002",
+  "name": "AVAX S.A. (CR)",
+  "short": "ΑΒΑΞ",
+  "sector": "Industrials",
+  "industry": "Engineering & Construction",
+  "clients": {
+   "TUNE_apr": 298,
+   "D1_may": 423,
+   "D0_june": 60
+  }
+ },
+ {
+  "isin": "GRS014003032",
+  "name": "PIRAEUS FINANCIAL HOLDINGS S.A.",
+  "short": "ΠΕΙΡ",
+  "sector": "Financial Services",
+  "industry": "Banks - Regional",
+  "clients": {
+   "TUNE_apr": 363,
+   "D1_may": 353,
+   "D0_june": 47
+  }
+ },
+ {
+  "isin": "GRS495003006",
+  "name": "AEGEAN AIRLINES",
+  "short": "ΑΡΑΙΓ",
+  "sector": "Industrials",
+  "industry": "Airlines",
+  "clients": {
+   "TUNE_apr": 573,
+   "D1_may": 115,
+   "D0_june": 29
+  }
+ },
+ {
+  "isin": "GRS346003007",
+  "name": "FRIGOGLASS S.A.(CR)",
+  "short": "ΦΡΙΓΟ",
+  "sector": "Consumer Cyclical",
+  "industry": "Packaging & Containers",
+  "clients": {
+   "TUNE_apr": 637,
+   "D1_may": 74
+  }
+ },
+ {
+  "isin": "GRS372003004",
+  "name": "IKTINOS HELLAS S.A (CR)",
+  "short": "ΙΚΤΙΝ",
+  "sector": "Industrials",
+  "industry": "Building Products & Equipment",
+  "clients": {
+   "TUNE_apr": 23,
+   "D1_may": 658
+  }
+ },
+ {
+  "isin": "GRS015003007",
+  "name": "ALPHA SERVICES AND HOLDINGS S.A.",
+  "short": "ΑΛΦΑ",
+  "sector": "Financial Services",
+  "industry": "Banks - Regional",
+  "clients": {
+   "TUNE_apr": 316,
+   "D1_may": 322,
+   "D0_june": 41
+  }
+ },
+ {
+  "isin": "GRS245213004",
+  "name": "LAMDA DEVELOPMENT S.A. (CR)",
+  "short": "ΛΑΜΔΑ",
+  "sector": "Real Estate",
+  "industry": "Real Estate - Development",
+  "clients": {
+   "TUNE_apr": 620,
+   "D1_may": 39,
+   "D0_june": 15
+  }
+ },
+ {
+  "isin": "GRS003003035",
+  "name": "NATIONAL BANK OF GREECE",
+  "short": "ΕΤΕ",
+  "sector": "",
+  "industry": "",
+  "clients": {
+   "TUNE_apr": 291,
+   "D1_may": 307,
+   "D0_june": 26
+  }
+ },
+ {
+  "isin": "GRS004013009",
+  "name": "BANK OF GREECE (CR)",
+  "short": "ΕΛΛ",
+  "sector": "Financial Services",
+  "industry": "Banks - Regional",
+  "clients": {
+   "TUNE_apr": 3,
+   "D1_may": 609
+  }
+ },
+ {
+  "isin": "GRS001003037",
+  "name": "ATTICA BANK S.A",
+  "short": "ΑΤΤ",
+  "sector": "Financial Services",
+  "industry": "Banks - Regional",
+  "clients": {
+   "TUNE_apr": 176,
+   "D1_may": 178,
+   "D0_june": 58
+  }
+ },
+ {
+  "isin": "GRS096003009",
+  "name": "FOURLIS  S.A.(CR)",
+  "short": "ΦΡΛΚ",
+  "sector": "Consumer Cyclical",
+  "industry": "Specialty Retail",
+  "clients": {
+   "TUNE_apr": 83,
+   "D1_may": 2
+  }
+ },
+ {
+  "isin": "GRS282183003",
+  "name": "JUMBO S.A. (CR)",
+  "short": "ΜΠΕΛΑ",
+  "sector": "Consumer Cyclical",
+  "industry": "Specialty Retail",
+  "clients": {
+   "TUNE_apr": 38,
+   "D1_may": 18,
+   "D0_june": 8
+  }
+ },
+ {
+  "isin": "CY0109232112",
+  "name": "CAIRO MEZZ PLC",
+  "short": "ΚΑΙΡΟΜΕΖ",
+  "sector": "Financial Services",
+  "industry": "Capital Markets",
+  "clients": {
+   "TUNE_apr": 8,
+   "D1_may": 6,
+   "D0_june": 50
+  }
+ },
+ {
+  "isin": "GRS368313003",
+  "name": "BYTE COMPUTER S.A. (CR)",
+  "short": "ΒΥΤΕ",
+  "sector": "",
+  "industry": "",
+  "clients": {
+   "D1_may": 2,
+   "D0_june": 20
+  }
+ },
+ {
+  "isin": "GRS472003011",
+  "name": "PROFILE SYSTEMS AND SOFTWARE S.A. (CR)",
+  "short": "ΠΡΟΦ",
+  "sector": "Technology",
+  "industry": "Software - Application",
+  "clients": {
+   "TUNE_apr": 4,
+   "D1_may": 2
+  }
+ },
+ {
+  "isin": "GRS505003004",
+  "name": "PERFORMANCE TECHN/GIES Α.Ε.-ΚΟ",
+  "short": "ΠΕΡΦ",
+  "sector": "Technology",
+  "industry": "Information Technology Services",
+  "clients": {
+   "TUNE_apr": 4,
+   "D1_may": 2
+  }
+ },
+ {
+  "isin": "GRS289103004",
+  "name": "ALUMIL ALUMINIUM INDUSTRY S.A. (CR)",
+  "short": "ΑΛΜΥ",
+  "sector": "Basic Materials",
+  "industry": "Aluminum",
+  "clients": {
+   "TUNE_apr": 4,
+   "D1_may": 2
+  }
+ },
+ {
+  "isin": "GRS475003018",
+  "name": "ILYDA S.A. (CR)",
+  "short": "ΙΛΥΔΑ",
+  "sector": "Technology",
+  "industry": "Software - Application",
+  "clients": {
+   "TUNE_apr": 3,
+   "D1_may": 2
+  }
+ },
+ {
+  "isin": "GRS461003006",
+  "name": "Logismos INFORMATION SYSTEMS S.A. (CR)",
+  "short": "ΛΟΓΟΣ",
+  "sector": "Technology",
+  "industry": "Software - Application",
+  "clients": {
+   "TUNE_apr": 3,
+   "D1_may": 2
+  }
+ },
+ {
+  "isin": "GRS144003001",
+  "name": "ATTICA HOLDINGS S.A. (CR)",
+  "short": "ΑΤΤΙΚΑ",
+  "sector": "Industrials",
+  "industry": "Marine Shipping",
+  "clients": {
+   "TUNE_apr": 3,
+   "D1_may": 2
+  }
+ },
+ {
+  "isin": "GRS204003008",
+  "name": "GR. SARANTIS  S.A.(CR)",
+  "short": "ΣΑΡ",
+  "sector": "Consumer Defensive",
+  "industry": "Household & Personal Products",
+  "clients": {
+   "TUNE_apr": 4
+  }
+ },
+ {
+  "isin": "GRS477003008",
+  "name": "ELINOIL HELLENIC PETROLEUM COMPANY S.A. (CR)",
+  "short": "ΕΛΙΝ",
+  "sector": "Energy",
+  "industry": "Oil & Gas Refining & Marketing",
+  "clients": {
+   "TUNE_apr": 4
+  }
+ },
+ {
+  "isin": "GRS106003007",
+  "name": "REDS S.A. (CR)",
+  "short": "ΚΑΜΠ",
+  "sector": "Real Estate",
+  "industry": "Real Estate - Diversified",
+  "clients": {
+   "TUNE_apr": 3
+  }
+ },
+ {
+  "isin": "GRS439003005",
+  "name": "EUROCONSULTANTS S.A. (CR)",
+  "short": "ΕΣΥΜΒ",
+  "sector": "Technology",
+  "industry": "Information Technology Services",
+  "clients": {
+   "TUNE_apr": 3
+  }
+ },
+ {
+  "isin": "GRS498003003",
+  "name": "EPSILON NET S.A. (CR)",
+  "short": "ΕΠΣΙΛ",
+  "sector": "Technology",
+  "industry": "Software - Application",
+  "clients": {
+   "TUNE_apr": 3
+  }
+ },
+ {
+  "isin": "GRS510003015",
+  "name": "FOODLINK S.A. (SR)",
+  "short": "ΦΟΥΝΤΛ",
+  "sector": "Industrials",
+  "industry": "Integrated Freight & Logistics",
+  "clients": {
+   "TUNE_apr": 3
+  }
+ },
+ {
+  "isin": "GRS147233001",
+  "name": "ATHENS MEDICAL C.S.A. (CR)",
+  "short": "ΙΑΤΡ",
+  "sector": "Healthcare",
+  "industry": "Medical Care Facilities",
+  "clients": {
+   "TUNE_apr": 3
+  }
+ },
+ {
+  "isin": "GRS295003008",
+  "name": "KIRIACOULIS SHIPPING S.A. (CR)",
+  "short": "ΚΥΡΙΟ",
+  "sector": "Consumer Cyclical",
+  "industry": "Leisure",
+  "clients": {
+   "TUNE_apr": 3
+  }
+ },
+ {
+  "isin": "GRS332073006",
+  "name": "FIERATEX S.A. (CR)",
+  "short": "ΦΙΕΡ",
+  "sector": "Consumer Cyclical",
+  "industry": "Textile Manufacturing",
+  "clients": {
+   "D1_may": 2
+  }
+ },
+ {
+  "isin": "GRS384003000",
+  "name": "KORDELLOS CH. BROS S.A.(CR)",
+  "short": "ΚΟΡΔΕ",
+  "sector": "Basic Materials",
+  "industry": "Steel",
+  "clients": {
+   "D1_may": 2
+  }
+ },
+ {
+  "isin": "GRS345503007",
+  "name": "PETROS PETROPOULOS (CR)",
+  "short": "ΠΕΤΡΟ",
+  "sector": "Industrials",
+  "industry": "Farm & Heavy Construction Machinery",
+  "clients": {
+   "D1_may": 2
+  }
+ },
+ {
+  "isin": "GRS277023008",
+  "name": "EUROPEAN RELIANCE GEN. INSUR. S.A. (CR)",
+  "short": "ΕΥΠΙΚ",
+  "sector": "",
+  "industry": "",
+  "clients": {
+   "D1_may": 2
+  }
+ },
+ {
+  "isin": "GRS517003000",
+  "name": "BRIQ PROPERTIES REIC (CR)",
+  "short": "ΜΠΡΙΚ",
+  "sector": "Real Estate",
+  "industry": "REIT - Office",
+  "clients": {
+   "D1_may": 2
+  }
+ },
+ {
+  "isin": "GRS427003009",
+  "name": "TPA S.A. (CR)",
+  "short": "ΟΛΘ",
+  "sector": "Industrials",
+  "industry": "Marine Shipping",
+  "clients": {
+   "D1_may": 2
+  }
+ },
+ {
+  "isin": "GRS473003002",
+  "name": "REVOIL S.A. (CR)",
+  "short": "ΡΕΒΟΙΛ",
+  "sector": "Energy",
+  "industry": "Oil & Gas Refining & Marketing",
+  "clients": {
+   "D1_may": 2
+  }
+ },
+ {
+  "isin": "100974271034",
+  "name": "VIOHALCO SA (el-GR)",
+  "short": "ΒΙΟ",
+  "sector": "",
+  "industry": "",
+  "clients": {
+   "TUNE_apr": 1
+  }
+ },
+ {
+  "isin": "GRS070003009",
+  "name": "KEKROPS S.A. (CR)",
+  "short": "ΚΕΚΡ",
+  "sector": "",
+  "industry": "",
+  "clients": {
+   "D1_may": 1
+  }
+ }
+]

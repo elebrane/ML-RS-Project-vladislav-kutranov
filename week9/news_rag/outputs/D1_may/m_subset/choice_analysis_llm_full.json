@@ -1,0 +1,21 @@
+{
+ "arm": "llm_full",
+ "run": "../outputs/D1_may/m_subset",
+ "clients": 78,
+ "mean_overlap_with_C0_topk": 0.478,
+ "mean_share_equal_to_first_k_shown": 0.261,
+ "median_popularity_rank_of_picks": {
+  "llm": 8,
+  "c0": 6
+ },
+ "share_in_client_past_sectors": {
+  "llm": 0.169,
+  "c0": 0.202
+ },
+ "mean_price_change_30d_of_picks": {
+  "llm": 0.1343,
+  "c0": 0.0437
+ },
+ "bought_assets_dropped_from_C0_slots": 5,
+ "bought_assets_added_by_llm": 1
+}

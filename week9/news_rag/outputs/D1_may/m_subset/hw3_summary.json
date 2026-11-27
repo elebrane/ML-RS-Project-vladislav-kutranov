@@ -1,0 +1,353 @@
+{
+ "table": {
+  "popularity": {
+   "all": 0.1021,
+   "n_all": 174,
+   "buyers": 0.378,
+   "n_buyers": 47,
+   "bought_new": 0.3554,
+   "n_bought_new": 23,
+   "with_slots": 0.0779,
+   "n_with_slots": 143
+  },
+  "cbf": {
+   "all": 0.0945,
+   "n_all": 174,
+   "buyers": 0.3499,
+   "n_buyers": 47,
+   "bought_new": 0.2507,
+   "n_bought_new": 23,
+   "with_slots": 0.091,
+   "n_with_slots": 143
+  },
+  "latest_buy": {
+   "all": 0.1521,
+   "n_all": 174,
+   "buyers": 0.5631,
+   "n_buyers": 47,
+   "bought_new": 0.413,
+   "n_bought_new": 23,
+   "with_slots": 0.1206,
+   "n_with_slots": 143
+  },
+  "latest_buy_or_sell": {
+   "all": 0.1523,
+   "n_all": 174,
+   "buyers": 0.564,
+   "n_buyers": 47,
+   "bought_new": 0.3983,
+   "n_bought_new": 23,
+   "with_slots": 0.1147,
+   "n_with_slots": 143
+  },
+  "c0_popularity": {
+   "all": 0.1524,
+   "n_all": 174,
+   "buyers": 0.5642,
+   "n_buyers": 47,
+   "bought_new": 0.3977,
+   "n_bought_new": 23,
+   "with_slots": 0.1231,
+   "n_with_slots": 143
+  },
+  "cnews_attention": {
+   "all": 0.1459,
+   "n_all": 174,
+   "buyers": 0.5401,
+   "n_buyers": 47,
+   "bought_new": 0.3486,
+   "n_bought_new": 23,
+   "with_slots": 0.1152,
+   "n_with_slots": 143
+  },
+  "cnews_volume": {
+   "all": 0.1458,
+   "n_all": 174,
+   "buyers": 0.5398,
+   "n_buyers": 47,
+   "bought_new": 0.3478,
+   "n_bought_new": 23,
+   "with_slots": 0.1151,
+   "n_with_slots": 143
+  },
+  "cnews_tone": {
+   "all": 0.1463,
+   "n_all": 174,
+   "buyers": 0.5415,
+   "n_buyers": 47,
+   "bought_new": 0.3513,
+   "n_bought_new": 23,
+   "with_slots": 0.1157,
+   "n_with_slots": 143
+  },
+  "llm_nonews": {
+   "all": 0.144,
+   "n_all": 174,
+   "buyers": 0.5329,
+   "n_buyers": 47,
+   "bought_new": 0.3338,
+   "n_bought_new": 23,
+   "with_slots": 0.1129,
+   "n_with_slots": 143
+  },
+  "llm_full": {
+   "all": 0.1475,
+   "n_all": 174,
+   "buyers": 0.5461,
+   "n_buyers": 47,
+   "bought_new": 0.3607,
+   "n_bought_new": 23,
+   "with_slots": 0.1172,
+   "n_with_slots": 143
+  },
+  "oracle_block": {
+   "all": 0.1572,
+   "n_all": 174,
+   "buyers": 0.5821,
+   "n_buyers": 47,
+   "bought_new": 0.4343,
+   "n_bought_new": 23,
+   "with_slots": 0.129,
+   "n_with_slots": 143
+  }
+ },
+ "contrasts": [
+  {
+   "a": "llm_full",
+   "b": "llm_nonews",
+   "question": "A1: effect of news for the LLM (H1)",
+   "all_users": {
+    "diff": 0.0036,
+    "ci95": [
+     -0.0001,
+     0.0096
+    ],
+    "better": 3,
+    "worse": 1,
+    "sign_p": 0.625
+   },
+   "buyers": {
+    "diff": 0.0132,
+    "ci95": [
+     -0.0002,
+     0.0354
+    ],
+    "better": 3,
+    "worse": 1,
+    "sign_p": 0.625
+   }
+  },
+  {
+   "a": "llm_full",
+   "b": "c0_popularity",
+   "question": "method vs matched control",
+   "all_users": {
+    "diff": -0.0049,
+    "ci95": [
+     -0.0122,
+     0.0009
+    ],
+    "better": 4,
+    "worse": 3,
+    "sign_p": 1.0
+   },
+   "buyers": {
+    "diff": -0.0181,
+    "ci95": [
+     -0.0447,
+     0.0034
+    ],
+    "better": 4,
+    "worse": 3,
+    "sign_p": 1.0
+   }
+  },
+  {
+   "a": "llm_nonews",
+   "b": "c0_popularity",
+   "question": "LLM reordering without news vs control",
+   "all_users": {
+    "diff": -0.0084,
+    "ci95": [
+     -0.0169,
+     -0.0017
+    ],
+    "better": 2,
+    "worse": 5,
+    "sign_p": 0.4531
+   },
+   "buyers": {
+    "diff": -0.0312,
+    "ci95": [
+     -0.0606,
+     -0.0064
+    ],
+    "better": 2,
+    "worse": 5,
+    "sign_p": 0.4531
+   }
+  },
+  {
+   "a": "llm_full",
+   "b": "cnews_attention",
+   "question": "H2: LLM with news vs code with news",
+   "all_users": {
+    "diff": 0.0016,
+    "ci95": [
+     -0.0001,
+     0.0043
+    ],
+    "better": 3,
+    "worse": 1,
+    "sign_p": 0.625
+   },
+   "buyers": {
+    "diff": 0.006,
+    "ci95": [
+     -0.0005,
+     0.0156
+    ],
+    "better": 3,
+    "worse": 1,
+    "sign_p": 0.625
+   }
+  },
+  {
+   "a": "cnews_attention",
+   "b": "c0_popularity",
+   "question": "news signal in code (go/no-go)",
+   "all_users": {
+    "diff": -0.0065,
+    "ci95": [
+     -0.0141,
+     -0.0007
+    ],
+    "better": 2,
+    "worse": 5,
+    "sign_p": 0.4531
+   },
+   "buyers": {
+    "diff": -0.024,
+    "ci95": [
+     -0.0515,
+     -0.0024
+    ],
+    "better": 2,
+    "worse": 5,
+    "sign_p": 0.4531
+   }
+  },
+  {
+   "a": "llm_full",
+   "b": "latest_buy",
+   "question": "reference: vs best provided baseline",
+   "all_users": {
+    "diff": -0.0046,
+    "ci95": [
+     -0.017,
+     0.0076
+    ],
+    "better": 9,
+    "worse": 12,
+    "sign_p": 0.6636
+   },
+   "buyers": {
+    "diff": -0.017,
+    "ci95": [
+     -0.0609,
+     0.0282
+    ],
+    "better": 9,
+    "worse": 12,
+    "sign_p": 0.6636
+   }
+  }
+ ],
+ "subset_diagnostics": {},
+ "meta": {
+  "run_name": "m_subset",
+  "cohort": {
+   "name": "D1_may",
+   "cutoff": "2021-05-01",
+   "max_users": 3000,
+   "active_days": 90,
+   "role": "development evaluation (main experiment and ablations), run once per arm"
+  },
+  "arms": [
+   "c0_popularity",
+   "cnews_attention",
+   "cnews_volume",
+   "cnews_tone",
+   "llm_nonews",
+   "llm_full"
+  ],
+  "subset_arms": [],
+  "subset_users": 0,
+  "protocol_hash": "e8a41099ddb73e0ab6299f3aebdab9dec63d36887eb4e0c50073fae592433bab",
+  "hw3_protocol_hash": "381cbd19c21f5599730fcf8f722734712400dc30086e0dd51433fbdc87d8b0d4",
+  "users": 174,
+  "lists_changed_vs_c0": {
+   "cnews_attention": 78,
+   "cnews_volume": 78,
+   "cnews_tone": 78,
+   "llm_nonews": 78,
+   "llm_full": 77
+  },
+  "llm_status": {
+   "llm_nonews": {
+    "no_call_out_of_scope": 65,
+    "ok": 78,
+    "no_call_no_slots": 31
+   },
+   "llm_full": {
+    "no_call_out_of_scope": 65,
+    "ok": 78,
+    "no_call_no_slots": 31
+   }
+  },
+  "news_coverage": {
+   "blocks_with_slots": 143,
+   "blocks_with_tracked_stocks": 78,
+   "tracked_candidates": 987,
+   "with_articles_30d": 813,
+   "with_headlines": 407
+  },
+  "prompt_chars": {
+   "llm_nonews": {
+    "mean": 3761,
+    "max": 3832
+   },
+   "llm_full": {
+    "mean": 7242,
+    "max": 7789
+   }
+  },
+  "generator": {
+   "model": "Qwen/Qwen3-4B-Instruct-2507",
+   "requested_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+   "resolved_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+   "device": "mps",
+   "dtype": "torch.float16",
+   "torch_version": "2.11.0",
+   "transformers_version": "4.57.6",
+   "tokenizer_class": "Qwen2TokenizerFast",
+   "do_sample": false,
+   "temperature": 0.0,
+   "top_p": 1.0,
+   "sample_seed": null,
+   "thinking": false,
+   "context_limit": 8192
+  },
+  "prompt": "block_ranker_v1.txt",
+  "max_new_tokens": 90,
+  "seconds": {
+   "preparation_cohort_and_blocks": 18.7,
+   "recommendation_loop_wall": 0.4,
+   "generation_by_arm_incl_cached": {
+    "llm_nonews": 613.2,
+    "llm_full": 6672.9
+   },
+   "total_wall": 22.3
+  }
+ }
+}

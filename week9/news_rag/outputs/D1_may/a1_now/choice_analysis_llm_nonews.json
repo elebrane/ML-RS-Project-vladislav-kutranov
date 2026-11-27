@@ -1,0 +1,21 @@
+{
+ "arm": "llm_nonews",
+ "run": "../outputs/D1_may/a1_now",
+ "clients": 669,
+ "mean_overlap_with_C0_topk": 0.464,
+ "mean_share_equal_to_first_k_shown": 0.277,
+ "median_popularity_rank_of_picks": {
+  "llm": 9,
+  "c0": 6
+ },
+ "share_in_client_past_sectors": {
+  "llm": 0.177,
+  "c0": 0.222
+ },
+ "mean_price_change_30d_of_picks": {
+  "llm": 0.1327,
+  "c0": 0.0431
+ },
+ "bought_assets_dropped_from_C0_slots": 33,
+ "bought_assets_added_by_llm": 4
+}

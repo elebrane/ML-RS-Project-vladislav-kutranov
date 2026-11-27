@@ -1,0 +1,790 @@
+[
+ {
+  "isin": "GRS145003000",
+  "name": "GEK TERNA HOLDING, REAL ESTATE, CONSTRUCTION (CR)",
+  "ticker_gr": "ΓΕΚΤΕΡΝΑ",
+  "query_phrases": [
+   "GEK Terna"
+  ],
+  "title_patterns": [
+   "γεκ τερνα",
+   "gek terna",
+   "γεκτερνα"
+  ],
+  "source": "manual",
+  "weight": 1335
+ },
+ {
+  "isin": "GRS496003005",
+  "name": "TERNA ENERGY S.A. (CR)",
+  "ticker_gr": "ΤΕΝΕΡΓ",
+  "query_phrases": [
+   "Terna Energy"
+  ],
+  "title_patterns": [
+   "τερνα ενεργειακ*",
+   "terna energy",
+   "τερνα energy"
+  ],
+  "source": "manual",
+  "weight": 1310
+ },
+ {
+  "isin": "BE0974303357",
+  "name": "CENERGY HOLDINGS SA",
+  "ticker_gr": "CENER",
+  "query_phrases": [
+   "Cenergy"
+  ],
+  "title_patterns": [
+   "cenergy"
+  ],
+  "source": "manual",
+  "weight": 1300
+ },
+ {
+  "isin": "GRS087003000",
+  "name": "INTRACOM S.A. HOLDINGS (CR)",
+  "ticker_gr": "ΙΝΤΚΑ",
+  "query_phrases": [
+   "Intracom Holdings",
+   "Intracom"
+  ],
+  "title_patterns": [
+   "intracom",
+   "ιντρακομ"
+  ],
+  "source": "manual",
+  "weight": 1298
+ },
+ {
+  "isin": "GRS359353000",
+  "name": "ATHENS WATER SUPPLY AND SEWERAGE S.A.",
+  "ticker_gr": "ΕΥΔΑΠ",
+  "query_phrases": [
+   "EYDAP",
+   "Athens Water Supply"
+  ],
+  "title_patterns": [
+   "ευδαπ",
+   "eydap"
+  ],
+  "source": "manual",
+  "weight": 1283
+ },
+ {
+  "isin": "GRS314003005",
+  "name": "MARFIN INVESTEMENT GROUP S.A.",
+  "ticker_gr": "ΜΙΓ",
+  "query_phrases": [
+   "Marfin Investment Group"
+  ],
+  "title_patterns": [
+   "marfin",
+   "μιγ"
+  ],
+  "source": "manual",
+  "weight": 1243
+ },
+ {
+  "isin": "GRS191213008",
+  "name": "ELLAKTOR S.A. (CR)",
+  "ticker_gr": "ΕΛΛΑΚΤΩΡ",
+  "query_phrases": [
+   "Ellaktor"
+  ],
+  "title_patterns": [
+   "ελλακτωρ*",
+   "ellaktor"
+  ],
+  "source": "manual",
+  "weight": 1221
+ },
+ {
+  "isin": "GRS260333000",
+  "name": "HELLENIC TELECOM ORGANIZATION SA",
+  "ticker_gr": "ΟΤΕ",
+  "query_phrases": [
+   "Hellenic Telecommunications",
+   "Cosmote",
+   "OTE Group"
+  ],
+  "title_patterns": [
+   "οτε",
+   "ote",
+   "cosmote"
+  ],
+  "source": "manual",
+  "weight": 1206
+ },
+ {
+  "isin": "GRS419003009",
+  "name": "OPAP SA",
+  "ticker_gr": "ΟΠΑΠ",
+  "query_phrases": [
+   "OPAP"
+  ],
+  "title_patterns": [
+   "οπαπ",
+   "opap"
+  ],
+  "source": "manual",
+  "weight": 1203
+ },
+ {
+  "isin": "GRS426003000",
+  "name": "MOTOR OIL REFINERIES SA",
+  "ticker_gr": "ΜΟΗ",
+  "query_phrases": [
+   "Motor Oil Hellas",
+   "Motor Oil"
+  ],
+  "title_patterns": [
+   "motor oil",
+   "μοτορ οιλ"
+  ],
+  "source": "manual",
+  "weight": 1196
+ },
+ {
+  "isin": "GRS518003009",
+  "name": "HOLDING COMPANY ADMIE IPTO S.A.",
+  "ticker_gr": "ΑΔΜΗΕ",
+  "query_phrases": [
+   "ADMIE",
+   "Independent Power Transmission Operator"
+  ],
+  "title_patterns": [
+   "αδμηε",
+   "admie",
+   "ipto"
+  ],
+  "source": "manual",
+  "weight": 1186
+ },
+ {
+  "isin": "GRS393503008",
+  "name": "MYTILINAIOS SA",
+  "ticker_gr": "ΜΥΤΙΛ",
+  "query_phrases": [
+   "Mytilineos"
+  ],
+  "title_patterns": [
+   "μυτιληναι*",
+   "mytilineos"
+  ],
+  "source": "manual",
+  "weight": 1155
+ },
+ {
+  "isin": "GRS281003004",
+  "name": "ELVAL HALCOR HELLENIC COPPER AND ALUMINIUM INDUSTR",
+  "ticker_gr": "ΕΛΧΑ",
+  "query_phrases": [
+   "ElvalHalcor",
+   "Elval Halcor"
+  ],
+  "title_patterns": [
+   "ελβαλχαλκορ",
+   "elvalhalcor",
+   "elval"
+  ],
+  "source": "manual",
+  "weight": 1122
+ },
+ {
+  "isin": "GRS434003000",
+  "name": "PPC SA",
+  "ticker_gr": "ΔΕΗ",
+  "query_phrases": [
+   "Public Power Corporation"
+  ],
+  "title_patterns": [
+   "δεη",
+   "ppc"
+  ],
+  "source": "manual",
+  "weight": 1076
+ },
+ {
+  "isin": "GRS298343005",
+  "name": "HELLENiQ ENERGY HOLDINGS S.A.",
+  "ticker_gr": "ΕΛΠΕ",
+  "query_phrases": [
+   "Hellenic Petroleum",
+   "Helleniq Energy"
+  ],
+  "title_patterns": [
+   "ελπε",
+   "ελληνικα πετρελαια",
+   "hellenic petroleum",
+   "helleniq"
+  ],
+  "source": "manual",
+  "weight": 1075
+ },
+ {
+  "isin": "GRS323003012",
+  "name": "EUROBANK ERGASIAS SERVICES AND HOLDINGS S.A.",
+  "ticker_gr": "ΕΥΡΩΒ",
+  "query_phrases": [
+   "Eurobank"
+  ],
+  "title_patterns": [
+   "eurobank"
+  ],
+  "source": "manual",
+  "weight": 909
+ },
+ {
+  "isin": "GRS239003007",
+  "name": "THRACE PLASTICS S.A.(CR)",
+  "ticker_gr": "ΠΛΑΘ",
+  "query_phrases": [
+   "Thrace Plastics"
+  ],
+  "title_patterns": [
+   "πλαστικα θρακης",
+   "thrace plastics"
+  ],
+  "source": "manual",
+  "weight": 855
+ },
+ {
+  "isin": "GRS395363005",
+  "name": "HELLENIC EXCHANGES-ATHENS STOCK EXCHANGE S.A",
+  "ticker_gr": "ΕΧΑΕ",
+  "query_phrases": [
+   "Hellenic Exchanges",
+   "ATHEX Group"
+  ],
+  "title_patterns": [
+   "ελληνικα χρηματιστηρια",
+   "εχαε",
+   "athex group"
+  ],
+  "source": "manual",
+  "weight": 803
+ },
+ {
+  "isin": "GRS213213002",
+  "name": "AVAX S.A. (CR)",
+  "ticker_gr": "ΑΒΑΞ",
+  "query_phrases": [
+   "Avax"
+  ],
+  "title_patterns": [
+   "αβαξ",
+   "avax"
+  ],
+  "source": "manual",
+  "weight": 781
+ },
+ {
+  "isin": "GRS014003032",
+  "name": "PIRAEUS FINANCIAL HOLDINGS S.A.",
+  "ticker_gr": "ΠΕΙΡ",
+  "query_phrases": [
+   "Piraeus Bank",
+   "Piraeus Financial Holdings"
+  ],
+  "title_patterns": [
+   "τραπεζα πειραιως",
+   "πειραιως financial",
+   "πειραιως holdings",
+   "piraeus bank",
+   "piraeus financial"
+  ],
+  "source": "manual",
+  "weight": 763
+ },
+ {
+  "isin": "GRS495003006",
+  "name": "AEGEAN AIRLINES",
+  "ticker_gr": "ΑΡΑΙΓ",
+  "query_phrases": [
+   "Aegean Airlines"
+  ],
+  "title_patterns": [
+   "aegean airlines",
+   "αεροπορια αιγαιου",
+   "aegean"
+  ],
+  "source": "manual",
+  "weight": 717
+ },
+ {
+  "isin": "GRS346003007",
+  "name": "FRIGOGLASS S.A.(CR)",
+  "ticker_gr": "ΦΡΙΓΟ",
+  "query_phrases": [
+   "Frigoglass"
+  ],
+  "title_patterns": [
+   "frigoglass"
+  ],
+  "source": "manual",
+  "weight": 711
+ },
+ {
+  "isin": "GRS372003004",
+  "name": "IKTINOS HELLAS S.A (CR)",
+  "ticker_gr": "ΙΚΤΙΝ",
+  "query_phrases": [
+   "Iktinos Hellas",
+   "Iktinos"
+  ],
+  "title_patterns": [
+   "ικτινος",
+   "iktinos"
+  ],
+  "source": "manual",
+  "weight": 681
+ },
+ {
+  "isin": "GRS015003007",
+  "name": "ALPHA SERVICES AND HOLDINGS S.A.",
+  "ticker_gr": "ΑΛΦΑ",
+  "query_phrases": [
+   "Alpha Bank",
+   "Alpha Services and Holdings"
+  ],
+  "title_patterns": [
+   "alpha bank",
+   "alpha services",
+   "alpha τραπεζα"
+  ],
+  "source": "manual",
+  "weight": 679
+ },
+ {
+  "isin": "GRS245213004",
+  "name": "LAMDA DEVELOPMENT S.A. (CR)",
+  "ticker_gr": "ΛΑΜΔΑ",
+  "query_phrases": [
+   "Lamda Development"
+  ],
+  "title_patterns": [
+   "lamda"
+  ],
+  "source": "manual",
+  "weight": 674
+ },
+ {
+  "isin": "GRS003003035",
+  "name": "NATIONAL BANK OF GREECE",
+  "ticker_gr": "ΕΤΕ",
+  "query_phrases": [
+   "National Bank of Greece"
+  ],
+  "title_patterns": [
+   "εθνικη τραπεζα",
+   "εθνικης τραπεζας",
+   "national bank of greece",
+   "nbg"
+  ],
+  "source": "manual",
+  "weight": 624
+ },
+ {
+  "isin": "GRS004013009",
+  "name": "BANK OF GREECE (CR)",
+  "ticker_gr": "ΕΛΛ",
+  "query_phrases": [
+   "Bank of Greece"
+  ],
+  "title_patterns": [
+   "τραπεζα της ελλαδος",
+   "τραπεζας της ελλαδος",
+   "bank of greece"
+  ],
+  "source": "manual",
+  "weight": 612
+ },
+ {
+  "isin": "GRS001003037",
+  "name": "ATTICA BANK S.A",
+  "ticker_gr": "ΑΤΤ",
+  "query_phrases": [
+   "Attica Bank"
+  ],
+  "title_patterns": [
+   "attica bank",
+   "τραπεζα αττικης",
+   "τραπεζας αττικης"
+  ],
+  "source": "manual",
+  "weight": 412
+ },
+ {
+  "isin": "GRS096003009",
+  "name": "FOURLIS  S.A.(CR)",
+  "ticker_gr": "ΦΡΛΚ",
+  "query_phrases": [
+   "Fourlis"
+  ],
+  "title_patterns": [
+   "φουρλη*",
+   "fourlis"
+  ],
+  "source": "manual",
+  "weight": 85
+ },
+ {
+  "isin": "GRS282183003",
+  "name": "JUMBO S.A. (CR)",
+  "ticker_gr": "ΜΠΕΛΑ",
+  "query_phrases": [
+   "Jumbo"
+  ],
+  "title_patterns": [
+   "jumbo"
+  ],
+  "source": "manual",
+  "weight": 64
+ },
+ {
+  "isin": "CY0109232112",
+  "name": "CAIRO MEZZ PLC",
+  "ticker_gr": "ΚΑΙΡΟΜΕΖ",
+  "query_phrases": [
+   "Cairo Mezz"
+  ],
+  "title_patterns": [
+   "cairo mezz"
+  ],
+  "source": "manual",
+  "weight": 64
+ },
+ {
+  "isin": "GRS368313003",
+  "name": "BYTE COMPUTER S.A. (CR)",
+  "ticker_gr": "ΒΥΤΕ",
+  "query_phrases": [
+   "Byte Computer"
+  ],
+  "title_patterns": [
+   "byte computer"
+  ],
+  "source": "manual",
+  "weight": 22
+ },
+ {
+  "isin": "GRS472003011",
+  "name": "PROFILE SYSTEMS AND SOFTWARE S.A. (CR)",
+  "ticker_gr": "ΠΡΟΦ",
+  "query_phrases": [
+   "Profile Systems",
+   "Profile Software"
+  ],
+  "title_patterns": [
+   "profile systems",
+   "profile software"
+  ],
+  "source": "manual",
+  "weight": 6
+ },
+ {
+  "isin": "GRS505003004",
+  "name": "PERFORMANCE TECHN/GIES Α.Ε.-ΚΟ",
+  "ticker_gr": "ΠΕΡΦ",
+  "query_phrases": [
+   "Performance Technologies"
+  ],
+  "title_patterns": [
+   "performance technologies"
+  ],
+  "source": "manual",
+  "weight": 6
+ },
+ {
+  "isin": "GRS289103004",
+  "name": "ALUMIL ALUMINIUM INDUSTRY S.A. (CR)",
+  "ticker_gr": "ΑΛΜΥ",
+  "query_phrases": [
+   "Alumil"
+  ],
+  "title_patterns": [
+   "alumil"
+  ],
+  "source": "manual",
+  "weight": 6
+ },
+ {
+  "isin": "GRS475003018",
+  "name": "ILYDA S.A. (CR)",
+  "ticker_gr": "ΙΛΥΔΑ",
+  "query_phrases": [
+   "Ilyda"
+  ],
+  "title_patterns": [
+   "ilyda",
+   "ιλυδα"
+  ],
+  "source": "manual",
+  "weight": 5
+ },
+ {
+  "isin": "GRS461003006",
+  "name": "Logismos INFORMATION SYSTEMS S.A. (CR)",
+  "ticker_gr": "ΛΟΓΟΣ",
+  "query_phrases": [
+   "Logismos"
+  ],
+  "title_patterns": [
+   "logismos"
+  ],
+  "source": "manual",
+  "weight": 5
+ },
+ {
+  "isin": "GRS144003001",
+  "name": "ATTICA HOLDINGS S.A. (CR)",
+  "ticker_gr": "ΑΤΤΙΚΑ",
+  "query_phrases": [
+   "Attica Group",
+   "Attica Holdings"
+  ],
+  "title_patterns": [
+   "attica group",
+   "attica holdings",
+   "attica συμμετοχων"
+  ],
+  "source": "manual",
+  "weight": 5
+ },
+ {
+  "isin": "GRS204003008",
+  "name": "GR. SARANTIS  S.A.(CR)",
+  "ticker_gr": "ΣΑΡ",
+  "query_phrases": [
+   "Sarantis"
+  ],
+  "title_patterns": [
+   "σαραντη*",
+   "sarantis"
+  ],
+  "source": "manual",
+  "weight": 4
+ },
+ {
+  "isin": "GRS477003008",
+  "name": "ELINOIL HELLENIC PETROLEUM COMPANY S.A. (CR)",
+  "ticker_gr": "ΕΛΙΝ",
+  "query_phrases": [
+   "Elinoil"
+  ],
+  "title_patterns": [
+   "elinoil",
+   "ελινοιλ"
+  ],
+  "source": "manual",
+  "weight": 4
+ },
+ {
+  "isin": "GRS106003007",
+  "name": "REDS S.A. (CR)",
+  "ticker_gr": "ΚΑΜΠ",
+  "query_phrases": [
+   "Reds Real Estate"
+  ],
+  "title_patterns": [
+   "reds"
+  ],
+  "source": "manual",
+  "weight": 3
+ },
+ {
+  "isin": "GRS439003005",
+  "name": "EUROCONSULTANTS S.A. (CR)",
+  "ticker_gr": "ΕΣΥΜΒ",
+  "query_phrases": [
+   "Euroconsultants"
+  ],
+  "title_patterns": [
+   "euroconsultants"
+  ],
+  "source": "manual",
+  "weight": 3
+ },
+ {
+  "isin": "GRS498003003",
+  "name": "EPSILON NET S.A. (CR)",
+  "ticker_gr": "ΕΠΣΙΛ",
+  "query_phrases": [
+   "Epsilon Net"
+  ],
+  "title_patterns": [
+   "epsilon net"
+  ],
+  "source": "manual",
+  "weight": 3
+ },
+ {
+  "isin": "GRS510003015",
+  "name": "FOODLINK S.A. (SR)",
+  "ticker_gr": "ΦΟΥΝΤΛ",
+  "query_phrases": [
+   "Foodlink"
+  ],
+  "title_patterns": [
+   "foodlink"
+  ],
+  "source": "manual",
+  "weight": 3
+ },
+ {
+  "isin": "GRS147233001",
+  "name": "ATHENS MEDICAL C.S.A. (CR)",
+  "ticker_gr": "ΙΑΤΡ",
+  "query_phrases": [
+   "Athens Medical Center",
+   "Iatriko Athinon"
+  ],
+  "title_patterns": [
+   "ιατρικο αθηνων",
+   "athens medical"
+  ],
+  "source": "manual",
+  "weight": 3
+ },
+ {
+  "isin": "GRS295003008",
+  "name": "KIRIACOULIS SHIPPING S.A. (CR)",
+  "ticker_gr": "ΚΥΡΙΟ",
+  "query_phrases": [
+   "Kiriacoulis"
+  ],
+  "title_patterns": [
+   "kiriacoulis",
+   "κυριακουλη*"
+  ],
+  "source": "manual",
+  "weight": 3
+ },
+ {
+  "isin": "GRS332073006",
+  "name": "FIERATEX S.A. (CR)",
+  "ticker_gr": "ΦΙΕΡ",
+  "query_phrases": [
+   "Fieratex"
+  ],
+  "title_patterns": [
+   "fieratex"
+  ],
+  "source": "manual",
+  "weight": 2
+ },
+ {
+  "isin": "GRS384003000",
+  "name": "KORDELLOS CH. BROS S.A.(CR)",
+  "ticker_gr": "ΚΟΡΔΕ",
+  "query_phrases": [
+   "Kordellos"
+  ],
+  "title_patterns": [
+   "kordellos",
+   "κορδελλο*"
+  ],
+  "source": "manual",
+  "weight": 2
+ },
+ {
+  "isin": "GRS345503007",
+  "name": "PETROS PETROPOULOS (CR)",
+  "ticker_gr": "ΠΕΤΡΟ",
+  "query_phrases": [
+   "Petros Petropoulos"
+  ],
+  "title_patterns": [
+   "petropoulos",
+   "πετροπουλο*"
+  ],
+  "source": "manual",
+  "weight": 2
+ },
+ {
+  "isin": "GRS277023008",
+  "name": "EUROPEAN RELIANCE GEN. INSUR. S.A. (CR)",
+  "ticker_gr": "ΕΥΠΙΚ",
+  "query_phrases": [
+   "European Reliance"
+  ],
+  "title_patterns": [
+   "european reliance",
+   "ευρωπαικη πιστη"
+  ],
+  "source": "manual",
+  "weight": 2
+ },
+ {
+  "isin": "GRS517003000",
+  "name": "BRIQ PROPERTIES REIC (CR)",
+  "ticker_gr": "ΜΠΡΙΚ",
+  "query_phrases": [
+   "BriQ Properties"
+  ],
+  "title_patterns": [
+   "briq"
+  ],
+  "source": "manual",
+  "weight": 2
+ },
+ {
+  "isin": "GRS427003009",
+  "name": "TPA S.A. (CR)",
+  "ticker_gr": "ΟΛΘ",
+  "query_phrases": [
+   "Thessaloniki Port Authority",
+   "ThPA"
+  ],
+  "title_patterns": [
+   "ολθ",
+   "thpa",
+   "λιμενος θεσσαλονικης"
+  ],
+  "source": "manual",
+  "weight": 2
+ },
+ {
+  "isin": "GRS473003002",
+  "name": "REVOIL S.A. (CR)",
+  "ticker_gr": "ΡΕΒΟΙΛ",
+  "query_phrases": [
+   "Revoil"
+  ],
+  "title_patterns": [
+   "revoil"
+  ],
+  "source": "manual",
+  "weight": 2
+ },
+ {
+  "isin": "100974271034",
+  "name": "VIOHALCO SA (el-GR)",
+  "ticker_gr": "ΒΙΟ",
+  "query_phrases": [
+   "Viohalco"
+  ],
+  "title_patterns": [
+   "viohalco",
+   "βιοχαλκο"
+  ],
+  "source": "manual",
+  "weight": 1
+ },
+ {
+  "isin": "GRS070003009",
+  "name": "KEKROPS S.A. (CR)",
+  "ticker_gr": "ΚΕΚΡ",
+  "query_phrases": [
+   "Kekrops"
+  ],
+  "title_patterns": [
+   "kekrops",
+   "κεκροψ"
+  ],
+  "source": "manual",
+  "weight": 1
+ }
+]
